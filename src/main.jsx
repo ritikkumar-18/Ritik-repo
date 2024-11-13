@@ -55,6 +55,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/form' element={<GetTravelForm/>}/>
        <Route path='/an/form' element={<GetTravelForm/>}/>
       <Route path='jk/form' element={<GetTravelForm/>}/>
+      <Route path='kerala/form' element={<GetTravelForm/>}/>
       <Route path='lahore/form' element={<GetTravelForm/>}/>
       <Route path='rajasthan/form' element={<GetTravelForm/>}/>
       <Route path='/form' element={<GetTravelForm/>}/> 
