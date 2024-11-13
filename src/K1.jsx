@@ -27,7 +27,7 @@ export const K1= () => {
       <div className="text-white max-w-5xl space-y-6 absolute top-16 left-24">
         <h1 className="text-5xl font-extrabold leading-tight">Kerala Trip Planner<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
-        <button onClick={goTo}className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
+        <button onClick={goTo} className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!
         </button>
       </div>

@@ -35,7 +35,7 @@ function App() {
       <Why/>
       <Happy/>
       <Form/>
-      <GetTravelForm/>
+      
       
     </>
   )
