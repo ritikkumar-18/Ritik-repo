@@ -17,7 +17,7 @@ export const Head = () => {
     <img
       src=" https://img.freepik.com/free-photo/pool-nature-landscape-palm-ocean_1203-4912.jpg?semt=ais_hybrid"
       alt="Background"
-      className="absolute inset-0 w-full h-5/6 object-cover"
+      className="absolute inset-0 w-full h-full object-cover"
     />
     
     <div className=" absolute h-5/6 inset-0 bg-black opacity-25"></div>
@@ -31,8 +31,8 @@ export const Head = () => {
         </button>
       </div>
      
-      <div className="bg-white bg-opacity-80 p-3 rounded-lg shadow-lg max-w-md absolute right-20 top-3">
-        <h2 className="text-3xl font-bold mb-7">Get your free travel plan now</h2>
+      <div className="bg-white bg-opacity-80 p-3 rounded-lg shadow-lg max-w-md absolute right-20 top-8">
+        <h2 className="text-3xl font-bold mb-8">Get your free travel plan now</h2>
 
         
         <label className="block mb-2 text-lg font-bold">What do you want to explore?</label>

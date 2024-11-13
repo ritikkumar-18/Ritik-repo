@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Content = () => {
   return (
-    <section className="py-1 bg-gray-100">
+    <section className="py-1 bg-gray-100 mt-12 ">
         <h2 className="text-5xl font-bold mb-6 px-10">How it works?</h2>
     <div className=" bg-gray-100 h-screen flex flex-col items-center justify-center">
     <div className=" grid grid-cols-4 gap-8 w-3/4 ">
