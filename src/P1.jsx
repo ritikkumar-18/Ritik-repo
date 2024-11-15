@@ -1,17 +1,13 @@
 import React from 'react'
 import './Header.css'
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import GetTravelForm from './GetTravelForm';
 
 export const P1= () => {
-  const navigate = useNavigate();
   
-
-  
-  
-  const goTo = () => {
-    navigate('form'); 
-  
-  };
+  const [isPopupOpen, setIsPopupOpen] =useState(false);
+  const openPopup =()=> setIsPopupOpen(true);
+  const closePopup =()=>setIsPopupOpen(false);
   return (
     <header className="relative h-screen overflow-hidden">
     <img
@@ -26,9 +22,12 @@ export const P1= () => {
       <div className="text-white max-w-5xl space-y-6 absolute top-16 left-24">
         <h1 className="text-5xl font-extrabold leading-tight">Pahalgam   Trip Planner<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
-        <button onClick={goTo}className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
+        <button onClick={openPopup} className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!
         </button>
+        
+        <GetTravelForm isOpen ={isPopupOpen}
+        onClose={closePopup}/>
       </div>
      
       <div className="bg-white bg-opacity-80 p-3 rounded-lg shadow-lg max-w-md absolute right-14 top-10">
