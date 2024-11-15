@@ -67,7 +67,7 @@ export const AN1= () => {
       </div>
     </div>
     
-    <div className="absolute bottom-28 left-32 flex space-x-24 text-white text-center">
+    <div className="absolute bottom-28 left-32 flex space-x-24 text-white text-center  mt-10">
       <div className="flex flex-col items-center">
         <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaWNvbnMvZ2VuZXJhbC90cmF2ZWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="Icon 1" className="h-10 mb-2 invert" />
         <span>Free Personalized <br /> Itineraries</span>
