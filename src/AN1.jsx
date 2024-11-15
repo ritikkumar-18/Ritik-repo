@@ -3,7 +3,7 @@ import './Header.css'
 import { useState } from 'react';
 import GetTravelForm from './GetTravelForm';
 
-export const R1= () => {
+export const AN1= () => {
   const [isPopupOpen, setIsPopupOpen] =useState(false);
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
