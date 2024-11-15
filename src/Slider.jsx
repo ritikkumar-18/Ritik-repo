@@ -106,6 +106,7 @@ const data=[
         name: "Uttrakhand",
         price: "₹8,538",
         image: "https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvc3RhdGVzLzE2NzU1MzE1NDc1NDU1NzMyMzQ1NTgxMDU0Njg3NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjUwMCwiaGVpZ2h0Ijo1MDAsImZpdCI6ImNvdmVyIn19fQ==",
+        route:'/u'
       },
       {
         name: "Sikkim",
@@ -174,8 +175,8 @@ const Slide = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 1000,
+    autoplaySpeed: 2000,
     cssEase: "linear"
   };
 

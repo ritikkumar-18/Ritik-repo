@@ -96,7 +96,7 @@
                         </div>
                         <div className=' flex justify-between items-center mt-4'>
                             <div>
-                                <p className='text-lg font-semibold'>{trip.price}</p>
+                                <p className='text-lg font-semibold'>{trip.price}/-</p>
                                 <p className='text-xs text-gray-500'>{trip.people}</p>
                             </div>
                             <div className='text-center'>

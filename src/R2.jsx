@@ -153,7 +153,7 @@ const R2 = () => {
                 <Slider {...settings}>
                 {content.map((contents,index)=>(
                     <div key={index} className='bg-gray-100 rounded-lg overflow-hidden mx-auto '>
-                        <img src={contents.image}alt={contents.name}className='h-fullw-full object-cover rounded-b-lg '/>
+                        <img src={contents.image}alt={contents.name}className='h-full w-full object-cover rounded-b-lg '/>
                         <div className='p-4'>
                             <h3 className='text-xl font-semibold text-gray-800'>{contents.name}</h3>
                             <p className='text-gray-600'>{contents.description}</p>{contents.price&&(

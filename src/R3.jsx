@@ -8,7 +8,7 @@ const trips = [
     {
       title: "Shahbaz's Jaipur and Ajmer's Cultural Immersion",
       locations: "Ajmer    •   Pushkar    • Jaipur  ",
-      curator: "Shahbaz Ansari",
+      curator: " Curated by Shahbaz Ansari",
       nights: "3 nights",
       details:'2 Stays ︱ 1 Transfers ︱ 0 Flights ︱ 0 Activities',
       price: "₹31,005",
@@ -18,7 +18,7 @@ const trips = [
     {
       title: "Shivani's Jaipur and Ajmer's Cultural Immersion",
       locations: " Ajmer    •   Pushkar    • Jaipur ",
-      curator: "Shivani Kumari Agarwal",
+      curator: " Curated by Shivani Kumari Agarwal",
       nights: "3 nights",
       details:'2 Stays ︱ 1 Transfers ︱0 Flights ︱ 0 Activities  ',
       price: "₹31,005",
@@ -28,7 +28,7 @@ const trips = [
     {
       title: "Keshav's Jaipur and Ajmer's Cultural Immersion",
       locations: "Ajmer    •   Pushkar    • Jaipur",
-      curator: "Kesahv",
+      curator: " Curated by Kesahv",
       nights: "3 nights",
       details:'2 Stays ︱ 1 Transfers ︱ 0 Flights ︱0 Activities',
       price: "₹31,005",
@@ -39,7 +39,7 @@ const trips = [
     {
       title:"Dibakar's Jaipur and Ajmer's Cultural Immersion",
       locations:'Ajmer    •   Pushkar    • Jaipur',
-      curator:'Dibakar',
+      curator:' Curated by Dibakar',
       nights:'3 nights',
       details:'1 Stays ︱3 Transfers ︱ 0 flights ︱ 0 Activities',
       price:'₹31,005',
@@ -49,7 +49,7 @@ const trips = [
     {
         title:"Keshav's Jaipur and Ajmer's Cultural Immersion",
         locations:' Ajmer    •   Pushkar    • Jaipur',
-        curator:'Keshav',
+        curator:'Curated by Keshav',
         price:'₹31,005',
         people:'for 2 person',
         nights:'3 nights',
@@ -61,7 +61,7 @@ const trips = [
     {
        title:"Keshav's Jaipur and Ajmer's Cultural Immersion",
        locations:'Ajmer    •   Pushkar    • Jaipur',
-       curator:'Kesahv',
+       curator:'Curated by Kesahv',
        nights:'3 nights',
        details:'2 Stays ︱ 1 Transfers ︱0 Flights ︱ 0 Activities ',
        price:'₹31,005',
@@ -97,7 +97,7 @@ const trips = [
                        </div>
                        <div className=' flex justify-between items-center mt-4'>
                            <div>
-                               <p className='text-lg font-semibold'>{trip.price}</p>
+                               <p className='text-lg font-semibold'>{trip.price}/-</p>
                                <p className='text-xs text-gray-500'>{trip.people}</p>
                            </div>
                            <div className='text-center'>

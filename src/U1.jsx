@@ -3,14 +3,15 @@ import './Header.css'
 import { useState } from 'react';
 import GetTravelForm from './GetTravelForm';
 
-export const Lahore = () => {
+export const U1= () => {
   const [isPopupOpen, setIsPopupOpen] =useState(false);
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
+  
   return (
     <header className="relative h-screen overflow-hidden">
     <img
-      src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvcGFnZS8xNjc0NjMyMzQxMjI0NjIxNTM0MzQ3NTM0MTc5NjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMjQwLCJoZWlnaHQiOjEwNDAsImZpdCI6ImNvdmVyIn19fQ=="
+      src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvc3RhdGVzLzE2NzU1MzE1NDc1NDU1NzMyMzQ1NTgxMDU0Njg3NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIyNDAsImhlaWdodCI6MTA0MCwiZml0IjoiY292ZXIifX19"
       alt="Background"
       className="absolute inset-0 w-full h-full object-cover"
     />
@@ -19,17 +20,18 @@ export const Lahore = () => {
     <div className="relative flex items-center justify-between px-10 h-full">
       
       <div className="text-white max-w-5xl space-y-6 absolute top-16 left-24">
-        <h1 className="text-4xl font-extrabold leading-tight">Lahore<br />Let AI Be Your Expert Guide.</h1>
+        <h1 className="text-5xl font-extrabold leading-tight">Uttrakhand <br/> Trip Planner<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
-        <button  onClick={openPopup} className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
+        <button onClick={openPopup}className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!
         </button>
+        
         <GetTravelForm isOpen ={isPopupOpen}
         onClose={closePopup}/>
       </div>
      
-      <div className="bg-white bg-opacity-80 p-3 rounded-lg shadow-lg max-w-md absolute right-20 top-8">
-        <h2 className="text-3xl font-bold mb-7 ">Get your free travel plan now</h2>
+      <div className="bg-white bg-opacity-80 p-3 rounded-lg shadow-lg max-w-md absolute right-14 top-10">
+        <h2 className="text-3xl font-bold mb-7">Get your free travel plan now</h2>
 
         
         <label className="block mb-2 text-lg font-bold">What do you want to explore?</label>
@@ -66,7 +68,7 @@ export const Lahore = () => {
       </div>
     </div>
     
-    <div className="absolute bottom-36  left-32 flex space-x-24 text-white text-center">
+    <div className="absolute bottom-28 left-32 flex space-x-24 text-white text-center">
       <div className="flex flex-col items-center">
         <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaWNvbnMvZ2VuZXJhbC90cmF2ZWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="Icon 1" className="h-10 mb-2 invert" />
         <span>Free Personalized <br /> Itineraries</span>
