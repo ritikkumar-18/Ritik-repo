@@ -3,11 +3,10 @@ import './Header.css'
 import { useState } from 'react';
 import GetTravelForm from './GetTravelForm';
 
-export const H1= () => {
+export const R1= () => {
   const [isPopupOpen, setIsPopupOpen] =useState(false);
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
-  
   return (
     <header className="relative h-screen overflow-hidden">
     <img
@@ -20,12 +19,11 @@ export const H1= () => {
     <div className="relative flex items-center justify-between px-10 h-full">
       
       <div className="text-white max-w-5xl space-y-6 absolute top-16 left-24">
-        <h1 className="text-5xl font-extrabold leading-tight">Himachal Pradesh <br/> Trip Planner<br />Let AI Be Your Expert Guide.</h1>
+        <h1 className="text-5xl font-extrabold leading-tight">Himachal Pradesh <br/>Trip Planner<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
         <button onClick={openPopup}className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!
         </button>
-        
         <GetTravelForm isOpen ={isPopupOpen}
         onClose={closePopup}/>
       </div>

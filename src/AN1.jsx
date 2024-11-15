@@ -3,11 +3,10 @@ import './Header.css'
 import { useState } from 'react';
 import GetTravelForm from './GetTravelForm';
 
-export const AN1= () => {
+export const R1= () => {
   const [isPopupOpen, setIsPopupOpen] =useState(false);
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
-  
   return (
     <header className="relative h-screen overflow-hidden">
     <img
@@ -22,7 +21,7 @@ export const AN1= () => {
       <div className="text-white max-w-5xl space-y-6 absolute top-16 left-24">
         <h1 className="text-5xl font-extrabold leading-tight">Andaman & Nicobar <br/> Trip Planner<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
-        <button onClick={openPopup} className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
+        <button onClick={openPopup}className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!
         </button>
         <GetTravelForm isOpen ={isPopupOpen}
@@ -67,7 +66,7 @@ export const AN1= () => {
       </div>
     </div>
     
-    <div className="absolute bottom-28 left-32 flex space-x-24 text-white text-center  mt-10">
+    <div className="absolute bottom-28 left-32 flex space-x-24 text-white text-center">
       <div className="flex flex-col items-center">
         <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaWNvbnMvZ2VuZXJhbC90cmF2ZWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="Icon 1" className="h-10 mb-2 invert" />
         <span>Free Personalized <br /> Itineraries</span>
