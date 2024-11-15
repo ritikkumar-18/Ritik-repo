@@ -127,31 +127,31 @@
  const WhyPlanWithUs = () => {
    const features = [
      {
-       image: 'https:d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-1.png',
+       image: 'https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-1.png',
        title: 'Personalization in seconds',
        description: 'Personalized and flexible itineraries crafted by our AI-powered planner.',
        bgColor: 'bg-orange-100',
      },
      {
-       image: 'https:d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-2.png',
+       image: 'https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-2.png',
        title: 'Real-Time Negotiated Bookings',
        description: 'Dedicated travel experts negotiate the best prices within your budget.',
        bgColor: 'bg-red-100',
      },
      {
-       image: 'https:d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-3.png',
+       image: 'https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-3.png',
        title: 'Book-it-all in one click',
        description: 'Book all your personalized and flexible travel needs in just one click.',
        bgColor: 'bg-blue-100',
      },
      {
-       image: 'https:d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-4.png',
+       image: 'https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-4.png',
        title: '24x7 Live Assistance',
        description: '24x7 support that keeps you swinging all day and night, no monkey business!',
        bgColor: 'bg-green-100',
      },
      {
-       image: 'https:d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-5.png',
+       image: 'https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-5.png',
        title: 'Offbeat Experiences, curated for you',
        description: 'Discover offbeat adventures, activities & experiences.',
        bgColor: 'bg-purple-200',
