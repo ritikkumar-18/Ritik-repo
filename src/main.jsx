@@ -33,6 +33,7 @@ import GetTravelForm from './GetTravelForm.jsx';
 import Phalgam from './Phalgam.jsx';
 import Himachal from './Himachal.jsx';
 import Uttrakhand from './Uttrakhand.jsx';
+import Sikkim from './Sikkim.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -54,6 +55,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/an'element={<AN/>}/>
       <Route path='/h' element={<Himachal/>}/>
       <Route path='/u' element={<Uttrakhand/>}/>
+      <Route path ='/s' element={<Sikkim/>}/>
       <Route path='/form' element={<GetTravelForm/>}/>
       <Route path='/phalgam' element={<Phalgam/>}/>
 

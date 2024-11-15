@@ -157,7 +157,7 @@
        bgColor: 'bg-purple-200',
      },
      {
-       image: 'https:d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-6.png',
+       image: 'https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-6.png',
        title: 'Transparent Pricing',
        description: 'Transparent pricing with no hidden fees - pay only a small service fee!',
        bgColor: 'bg-teal-100',
