@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { FaTimes } from 'react-icons/fa';
 
 const GetTravelForm = ( { isOpen, onClose}) => {
   if (!isOpen) return null;
@@ -14,16 +15,21 @@ const GetTravelForm = ( { isOpen, onClose}) => {
     /> */}
     {/* <div className='absolute flex items-center justify-center  min-h-screen min-w-screen'> */}
     
-    <div className="  bg-white p-3 rounded-lg shadow-lg shadow-[#bb60bb] max-w-md ">
+    <div className="  bg-white p-6 rounded-lg shadow-2xl shadow-[#bb60bb] max-w-md w-full h-[88vh] relative  trabsform transition-transform duration-500 ease-in-out translate-y-full animate-slideIn ">
+    <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+          <FaTimes size={20} />
+        </button>
         <h2 className="text-3xl font-bold mb-7 text-black ">Get your free travel plan now</h2>
 
         
         <label className="block mb-2 text-lg font-bold  text-black">What do you want to explore?</label>
         <input type="text" placeholder="Delhi, IN" className="w-full mb-1 p-3 border rounded-md focus:outline-none" />
         <input type="text" placeholder="Search destination" className="w-full mb-4 p-3 border rounded-md focus:outline-none" />
-        <button type="button" className="text-blue-500 mt-2 ">
+        <div className='text-center'>
+        <button type="button" className="text-blue-500 mt-2 mb-2 ">
                + Add Destination
            </button>
+           </div>
 
         
         <label className="block mb-3 text-lg font-bold  text-black">When are you planning to travel?</label>
@@ -50,7 +56,7 @@ const GetTravelForm = ( { isOpen, onClose}) => {
           Continue
         </button>
         
-        <button onClick={onClose} className='bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold  py-2 w-20 rounded-md mt-6 mb-5'>Close</button>
+       
       </div>
 
       </div>

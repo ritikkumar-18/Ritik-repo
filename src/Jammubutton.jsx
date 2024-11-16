@@ -1,6 +1,11 @@
 import React from 'react'
+import { useState} from 'react';
+import GetTravelForm from './GetTravelForm';
 
 export const Button = () => {
+    const [isPopupOpen, setIsPopupOpen] =useState(false);
+  const openPopup =()=> setIsPopupOpen(true);
+  const closePopup =()=>setIsPopupOpen(false);
   return (
     <section className="py-1 bg-gray-100">
         <h2 className="text-5xl font-bold mb-6 px-10 mt-16">How it works?</h2>
@@ -39,7 +44,9 @@ export const Button = () => {
     
     </div>
     <div className="flex items-center justify-center ">
-        <button className=" hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-14 ">Unlock your Adventure!</button>
+        <button onClick={openPopup} className=" hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-14 ">Unlock your Adventure!</button>
+        <GetTravelForm isOpen ={isPopupOpen}
+        onClose={closePopup}/>
     </div>
   </div>
   </section>

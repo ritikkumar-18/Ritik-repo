@@ -157,7 +157,7 @@ const R2 = () => {
                         <div className='p-4'>
                             <h3 className='text-xl font-semibold text-gray-800'>{contents.name}</h3>
                             <p className='text-gray-600'>{contents.description}</p>{contents.price&&(
-                                <p className='text-black font-bold mt-2'>From{contents.price}/-per day</p>
+                                <p className='text-black font-bold mt-2'>From {contents.price}/-per day</p>
                             )}
                      </div>
                     </div>

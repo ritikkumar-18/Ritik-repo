@@ -34,6 +34,11 @@ import Phalgam from './Phalgam.jsx';
 import Himachal from './Himachal.jsx';
 import Uttrakhand from './Uttrakhand.jsx';
 import Sikkim from './Sikkim.jsx';
+import Goa from './Goa.jsx';
+import AP from './AP.jsx';
+import Meghalaya from './Meghalaya.jsx';
+import Assam from './Assam.jsx';
+import Pondicherry from './Pondicherry.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -56,6 +61,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/h' element={<Himachal/>}/>
       <Route path='/u' element={<Uttrakhand/>}/>
       <Route path ='/s' element={<Sikkim/>}/>
+      <Route path ='/goa' element ={<Goa/>}/>
+      <Route path='/ap' element={<AP/>}/>
+      <Route path='/megha'element={<Meghalaya/>}/>
+      <Route path='/assam' element={<Assam/>}/>
+      <Route path='/pondi' element={<Pondicherry/>}/>
       <Route path='/form' element={<GetTravelForm/>}/>
       <Route path='/phalgam' element={<Phalgam/>}/>
 

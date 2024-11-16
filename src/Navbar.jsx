@@ -1,9 +1,14 @@
 import React from 'react'
 import './Navbar.css'
 import { useAuth0 } from '@auth0/auth0-react'
+import { useState } from 'react'
+import GetTravelForm from './GetTravelForm'
 
 
 export const Navbar = () => {
+  const [isPopupOpen, setIsPopupOpen] =useState(false);
+  const openPopup =()=> setIsPopupOpen(true);
+  const closePopup =()=>setIsPopupOpen(false);
   const {user, loginWithRedirect ,isAuthenticated } = useAuth0()
   const { logout } = useAuth0()
   return (
@@ -31,9 +36,12 @@ export const Navbar = () => {
 
 
     <div className="flex items-center space-x-4 mr-20">
-      <button className="bg-yellow-400 text-black hover:bg-black hover:text-white border border-black font-semibold py-2 px-4 rounded-md transition-all">
+      <button onClick={openPopup} className="bg-yellow-400 text-black hover:bg-black hover:text-white border border-black font-semibold py-2 px-4 rounded-md transition-all">
         Create a Trip
       </button>
+      
+      <GetTravelForm isOpen ={isPopupOpen}
+        onClose={closePopup}/>
 
       {
         isAuthenticated && <p className='bg-purple-200 border border-black rounded-lg cursor-pointer p-2'>
