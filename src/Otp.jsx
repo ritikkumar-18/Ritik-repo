@@ -67,7 +67,7 @@ export const Otp = () => {
      }
 
   return (
-    <section className='bg-red-400 flex items-center justify-center h-screen'>
+    <section className='bg-teal-400 flex items-center justify-center h-screen'>
         <div>
             <Toaster toastOptions={{ duration:4000 }}/>
             <div id='recaptcha-container'></div>

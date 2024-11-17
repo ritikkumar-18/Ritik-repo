@@ -135,7 +135,7 @@ const AS2 = () => {
   return (
     
     <div className='bg-gray-100 container  px-4 mt-14'>
-            <h2 className='text-3xl font-bold text-gray-800 mb-16'>Top locations across Rajasthan</h2> 
+            <h2 className='text-3xl font-bold text-gray-800 mb-16'>Top locations across Assam</h2> 
                 <div className='grid grid-cols-1 gap-4 mb-8 ml-32 '>
                 <Slider {...settings}>
                 {content.map((contents,index)=>(

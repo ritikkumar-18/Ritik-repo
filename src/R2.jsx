@@ -68,7 +68,7 @@ const content =[
 
 {
     name:'Chittorgarh',
-    description:'Historical, Fort< Heritage',
+    description:'Historical, Fort, Heritage',
     price:'₹5,431',
     image:'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY2l0aWVzLzE1OTI0ODAwMTUyNTE0MjM1OTczMzU4MTU0Mjk2OS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMCwiaGVpZ2h0IjozMDB9fX0=',
 },

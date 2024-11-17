@@ -3,14 +3,14 @@ import './Header.css'
 import { useState } from 'react';
 import GetTravelForm from './GetTravelForm';
 
-export const PO1= () => {
+export const CH1= () => {
   const [isPopupOpen, setIsPopupOpen] =useState(false);
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
   return (
     <header className="relative h-screen overflow-hidden">
     <img
-      src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvc3RhdGVzLzE2NzU1Mjk2ODQ3NDUyNTMwODYwOTAwODc4OTA2Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIyNDAsImhlaWdodCI6MTA0MCwiZml0IjoiY292ZXIifX19"
+      src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvcGFnZS8xNjc1MzU3OTQwODA0MDg5MzA3Nzg1MDM0MTc5NjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMjQwLCJoZWlnaHQiOjEwNDAsImZpdCI6ImNvdmVyIn19fQ=="
       alt="Background"
       className="absolute inset-0 w-full h-full object-cover"
     />
@@ -19,7 +19,7 @@ export const PO1= () => {
     <div className="relative flex items-center justify-between px-10 h-full">
       
       <div className="text-white max-w-5xl space-y-6 absolute top-16 left-24">
-        <h1 className="text-5xl font-extrabold leading-tight">Pondicherry Trip Planner<br />Let AI Be Your Expert Guide.</h1>
+        <h1 className="text-5xl font-extrabold leading-tight">Chhattisgarh Trip Planner<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
         <button onClick={openPopup}className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!

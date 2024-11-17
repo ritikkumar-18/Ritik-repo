@@ -8,10 +8,8 @@ import Country2 from './Countries2'
 import { Form } from './Footer' 
 import { Mood } from './Mood'
 import { Happy } from './Happy'
-import Europe from './Europe'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { JK } from './JK.jsx'
-import GetTravelForm from './GetTravelForm.jsx'
+import Europe from './Europe' 
+import { Otp } from './Otp.jsx'
 
 
   
@@ -35,6 +33,7 @@ function App() {
       <Why/>
       <Happy/>
       <Form/>
+      <Otp/>
       
       
     </>

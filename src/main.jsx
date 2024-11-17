@@ -39,6 +39,7 @@ import AP from './AP.jsx';
 import Meghalaya from './Meghalaya.jsx';
 import Assam from './Assam.jsx';
 import Pondicherry from './Pondicherry.jsx';
+import Punjab from './Punjab.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -66,6 +67,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/megha'element={<Meghalaya/>}/>
       <Route path='/assam' element={<Assam/>}/>
       <Route path='/pondi' element={<Pondicherry/>}/>
+      <Route path='/punjab' element={<Punjab/>}/>
       <Route path='/form' element={<GetTravelForm/>}/>
       <Route path='/phalgam' element={<Phalgam/>}/>
 
