@@ -1,7 +1,14 @@
 
 import React from 'react';
 import Slider from 'react-slick'
+import { useNavigate } from 'react-router-dom';
  export default function P2(){
+  const navigate = useNavigate();
+  
+    const goTo = (route) => {
+      navigate(route); 
+    
+    };
    
 
 const trips = [
@@ -14,6 +21,7 @@ const trips = [
       price: "",
       people: "",
       image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaXRpbmVyYXJ5L3phbnNrYXIuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjMwMH19fQ==',       
+      route:'/itinerary',
     },
     {
       title: "NY in Winter Wonderland of kashmir",
@@ -24,6 +32,7 @@ const trips = [
       price: "₹10,828",
       people: "for per person",
       image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaXRpbmVyYXJ5L3phbnNrYXIuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjMwMH19fQ==',
+      route:'/itinerary',
     },
     {
       title: "Jafeer's Getaway With Friends to Jammu & Kashmir",
@@ -34,6 +43,7 @@ const trips = [
       price: "₹7,574",
       people: "for 4 person",
       image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY2l0aWVzLzE2NTY0MjkzMzA5ODk4MDMwNzU3OTA0MDUyNzM0NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0IjozMDB9fX0=',
+      route:'/itinerary',
    
     },
     {
@@ -45,6 +55,7 @@ const trips = [
       price:'₹10,693',
       people:'for 7 person',
       image:'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY2l0aWVzLzE1ODUzMDEwMTU0MzQ3NDg4ODgwMTU3NDcwNzAzMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0IjozMDB9fX0=',
+      route:'/itinerary',
     },
     {
         title:"Meet's getaway to Jammu & Kashmir",
@@ -55,6 +66,7 @@ const trips = [
         nights:'6 nights',
         details:'4 Stays ︱ 3 Transfers ︱0 Flights ︱ 0 Activities ',
         image:'https://d31aoa0ehgvjdi.cloudfront.net/media/website/transparent.png',
+        route:'/itinerary',
 
     },
 
@@ -66,6 +78,7 @@ const trips = [
        price:'₹26,813',
        people:'for 2 person',
        image:'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY2l0aWVzLzE2NTY0MjkzMzA4MjQyNDQ3Mzc2MjUxMjIwNzAzMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0IjozMDB9fX0=',
+       route:'/itinerary',
     },
   ];
   const settings = {
@@ -100,7 +113,7 @@ const trips = [
                                <p className='text-xs text-gray-500'>{trip.people}</p>
                            </div>
                            <div className='text-center'>
-                           <button className='bg-yellow-400 text-black px-3 py-1 rounded hover:bg-black hover:text-white'>View Details</button></div>
+                           <button onClick={()=>goTo(trip.route)} className='bg-yellow-400 text-black px-3 py-1 rounded hover:bg-black hover:text-white'>View Details</button></div>
                        </div>
                    </div>
                    

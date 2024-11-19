@@ -9,8 +9,17 @@ import WhyPlanWithUs from './JammuForm'
 import { P1 } from './P1'
 import P2 from './P2'
 import P3 from './P3'
+import { useEffect } from 'react'
 
 const Phalgam = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when App1 is rendered
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+    
+  }, []);
   return (
     <>
     <Navbar/>

@@ -10,6 +10,8 @@ import { Mood } from './Mood'
 import { Happy } from './Happy'
 import Europe from './Europe' 
 import { Otp } from './Otp.jsx'
+import Otplogin from './OTP login/Otplogin.jsx'
+import OtpAuthentication from './Loginpage.jsx'
 
 
   
@@ -33,7 +35,9 @@ function App() {
       <Why/>
       <Happy/>
       <Form/>
-      <Otp/>
+      {/* <Otp/> */}
+      
+      <OtpAuthentication/>
       
       
     </>

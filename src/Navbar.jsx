@@ -1,16 +1,25 @@
 import React from 'react'
 import './Navbar.css'
-import { useAuth0 } from '@auth0/auth0-react'
 import { useState } from 'react'
 import GetTravelForm from './GetTravelForm'
+import OtpAuthentication from './Loginpage'
+
+export const Navbar = ( ) => {
+ 
 
 
-export const Navbar = () => {
   const [isPopupOpen, setIsPopupOpen] =useState(false);
+
+  const [showOtpAuth, setShowOtpAuth] = useState(false); // State for OTP Authentication popup
+
+
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
-  const {user, loginWithRedirect ,isAuthenticated } = useAuth0()
-  const { logout } = useAuth0()
+
+  const openOtpAuthentication = () => {
+    setShowOtpAuth(true);}
+
+  
   return (
     <nav className="w-full flex items-center justify-between p-4 bg-white border-b shadow-sm">
 
@@ -21,11 +30,15 @@ export const Navbar = () => {
 
     <div className="flex-1 mx-4 ml-72">
       <div className="relative max-w-screen-sm">
-        <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+       
+        <span  className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+          <svg    xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zm6-6l5 5" />
           </svg>
         </span>
+        
+       
+        
         <input
           type="text"
           placeholder="Where do you want to go?"
@@ -43,23 +56,11 @@ export const Navbar = () => {
       <GetTravelForm isOpen ={isPopupOpen}
         onClose={closePopup}/>
 
-      {
-        isAuthenticated && <p className='bg-purple-200 border border-black rounded-lg cursor-pointer p-2'>
-          {user.name}
-
-        
-        </p>
-      }
-      {
-         isAuthenticated ?(
-        <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className='bg-yellow-400 text-black hover:bg-black hover:text-white border border-black font-semibold py-2 px-4 rounded-md transition-all'>
-      Log Out
-    </button>):(
       
       <div className="relative">
-        <button onClick={()=> loginWithRedirect()}className="flex items-center text-black">
-          <span onClick={()=> loginWithRedirect()} className="sr-only">Account Menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <button  onClick={openOtpAuthentication} className="flex items-center text-black">
+          <span  className="sr-only">Account Menu</span>
+          <svg   xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24 "onClick={openOtpAuthentication}>
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-4 0-8 1.99-8 4v2h16v-2c0-2.01-4-4-8-4z" />
           </svg>
           <svg xmlns="http://www.w3.org/2000/svg" className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,8 +68,9 @@ export const Navbar = () => {
           </svg>
         </button>
         
+        
       </div>
-    )}
+    
     </div>
   </nav>
     

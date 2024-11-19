@@ -40,6 +40,8 @@ import Meghalaya from './Meghalaya.jsx';
 import Assam from './Assam.jsx';
 import Pondicherry from './Pondicherry.jsx';
 import Punjab from './Punjab.jsx';
+import Itinerary from './Itinerary.jsx';
+import { Iti } from './Iti.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -70,6 +72,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/punjab' element={<Punjab/>}/>
       <Route path='/form' element={<GetTravelForm/>}/>
       <Route path='/phalgam' element={<Phalgam/>}/>
+      <Route path='itinerary' element={<Iti/>}/>
 
     </Routes>
     </Auth0Provider>
