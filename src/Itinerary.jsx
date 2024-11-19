@@ -15,9 +15,9 @@ function Itinerary() {
             
                 <div className='p-4 border-b'>
                     <h1 className='text-2xl font-bold text-black'>Winter Wonderland Kashmir</h1>
-                    <p className=' text-sm text-gray-400 font-semibold'>Budget:
+                    <p className=' text-xl text-gray-400 font-semibold mt-3'>Budget
                     </p>
-                    <p className='text-black font-semibold'>Affoardable</p>
+                    <p className='text-black font-semibold text-xl mt-3'>Affoardable</p>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-3'>
                     <div className='md:col-span-2'>
@@ -29,20 +29,23 @@ function Itinerary() {
                     </div>
                 </div>
                 <div className="px-6 py-4 flex items-center justify-between border-t">
-          <div className="flex space-x-6">
-            <button className="text-black text-lg font-medium border-b-2 border-transparent hover:border-yellow-400 hover:text-yellow-400 transition-all duration-300 ease-in-out">
+          <div className="flex space-x-24">
+            <button className="text-black text-lg font-medium border-b-2   border-transparent hover:border-yellow-400 hover:text-yellow-400 hover:bg-[#262626]  px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Brief
             </button>
 
-            <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 transition-all duration-300 ease-in-out">
+            <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400  hover:bg-[#262626]  px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Itinerary
             </button>
-            <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 transition-all duration-300 ease-in-out">
+            <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 hover:bg-[#262626] px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Stays
+            </button>
+            <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 hover:bg-[#262626] px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
+              Activites
             </button>
           </div>
           <div>
-            <button className="bg-yellow-300 text-black text-lg font-semibold py-2 px-4 border border-black rounded-lg shadow-md hover:bg-black hover:text-white transition-all">
+            <button className="bg-yellow-400 text-black text-lg font-semibold py-2 px-4 border border-black rounded-lg shadow-md hover:bg-black hover:text-white transition-all">
               Log in to proceed
             </button>
           </div>
