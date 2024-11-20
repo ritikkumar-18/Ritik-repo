@@ -76,7 +76,7 @@ const content =[
 
 
 {
-    name:'Dachigam NAtional Park',
+    name:'Dachigam National Park',
     description:'Wildlife, Kashmir Valley, Himalayas',
     price:'₹11,000',
     image:'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY2l0aWVzLzE2NzY0OTEzOTQwNTkxMzg3NzQ4NzE4MjYxNzE4OC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MDAsImhlaWdodCI6NDAwLCJmaXQiOiJjb3ZlciJ9fX0=',
@@ -116,11 +116,11 @@ const Jammucontent = () => {
     
     <div className='bg-gray-100 container  px-4  mt-14'>
             <h2 className='text-3xl font-bold text-gray-800 mb-16'>Top locations across Jammu & Kashmir</h2> 
-                <div className='grid grid-cols-1 gap-4 mb-8 ml-32 '>
+                <div className='grid grid-cols-1 gap-20 mb-8 ml-32'>
                 <Slider {...settings}>
                 {content.map((contents,index)=>(
                     <div key={index} className='bg-gray-100 rounded-lg overflow-hidden mx-auto '>
-                        <img src={contents.image} onClick={()=>goTo(contents.route)} alt={contents.name} className='h-fullw-full object-cover rounded-b-lg, cursor-pointer '/>
+                        <img src={contents.image} onClick={()=>goTo(contents.route)} alt={contents.name} className='h-full w-full object-cover rounded-b-lg, cursor-pointer '/>
                         <div className='p-4'>
                             <h3 className='text-xl font-semibold text-gray-800'>{contents.name}</h3>
                             <p className='text-gray-600'>{contents.description}</p>{contents.price&&(

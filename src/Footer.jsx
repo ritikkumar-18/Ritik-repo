@@ -13,18 +13,17 @@ export const Form = () => {
         <p className="text-gray-700 mb-4">Get Early Bird Deals, Extra Discounts & Priority Customer Support.</p>
         
 
-        <div className="flex justify-center items-center space-x-4">
-          <input type="text" placeholder="First name"className="p-3 border border-gray-300 rounded-lg focus:outline-none"/>
-          <input type="email" placeholder="Email address" 
-            className="p-3 border border-gray-300 rounded-lg focus:outline-none"/>
-          <button className="bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold">Subscribe Now</button>
+        <div className="flex justify-center sm:flex-row items-center sm:space-y-0 sm:space-x-4 space-x-4">
+          <input type="text" placeholder="First name"className="p-3 border border-gray-300 rounded-lg focus:outline-none sm:w-28 md:w-auto"/>
+          <input type="email" placeholder="Email address"className="p-3 border border-gray-300 rounded-lg focus:outline-none  sm:w-28 md:w-auto"/>
+          <button className="bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold sm:w-auto md:w-auto">Subscribe Now</button>
         </div>
       </div>
 
       <footer className='bg-black text-white mt-8 py-10 w-full'>
         <div className='container mx-auto px-4'>
           <div className='flex flex-col md:flex-row justify-between'>
-            <div className='mb-6 md:mb-0'>
+            <div className='mb-6 md:mb-0 flex-1'>
               <h3 className='font-bold text-lg'>The Tarzan Way</h3>
               <p className='text-gray-400 mt-2 mx-w-xs'>The Tarzan Way is a travel-based startup<br/> with the vision to simplify travel<br/> and build immerisve travel programs across India.</p>
               <div className='flex gap-5 mt-4 '>
@@ -52,8 +51,8 @@ export const Form = () => {
             
 
 
-            <div className='flex gap-10'>
-              <div>
+            <div className='flex gap-10 mt-8 md:mt-0'>
+              <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Travel Destinations</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Europe</li>
@@ -67,7 +66,7 @@ export const Form = () => {
               </div>
 
 
-              <div>
+              <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Travel Styles</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Personalize</li>
@@ -79,7 +78,7 @@ export const Form = () => {
               </div>
 
 
-              <div>
+              <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Company</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Blogs</li>
@@ -91,7 +90,7 @@ export const Form = () => {
               </div>
 
 
-              <div>
+              <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Term & Policies</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Terms of Services</li>

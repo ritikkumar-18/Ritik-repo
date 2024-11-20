@@ -60,7 +60,7 @@ function Itinerary() {
             
         </div>
 
-     <div className="flex flex-col lg:flex-row gap-6 p-6"> 
+     <div className="grid grid-col grid-cols-2 lg:flex-row gap-6 p-6 md:grid-cols-2 md:w-auto sm:grid-cols-2 sm:text-left "> 
   
       <div className="w-full lg:w-1/3 ">
         <h2 className="text-3xl font-bold mb-8 ml-10">Route</h2>

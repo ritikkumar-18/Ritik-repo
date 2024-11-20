@@ -263,25 +263,41 @@ const Slide = () => {
   
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
+    responsive:[
+      {
+        breakpoint:1200,
+        settings:{
+          slidesToShow:2,
+          slidesToScroll:1,
+        },
+      },
+      {
+        breakpoint:768,
+        settings:{
+          slidesToShow:1,
+          slidesToScroll:1,
+        },
+      },
+    ]
   };
 
   return (
     <div className="bg-gray-100 w-auto m-auto">
-      <div className="mt-20">
+      <div className="mt-20 md:mt-32 sm:mt-96 xs:mb-20">
         <div className="container">
           <h2 className="text-4xl font-bold mb-16 px-10">Plan as per the best destinations in India</h2>
         </div>
         <Slider {...settings}>
           {data.map((d) => (
-            <div key={d.name} className="bg-gray-100 h-[450px] text-black rounded-xl">
+            <div key={d.name} className="bg-gray-100 h-[450px] text-black rounded-xl sm:w-auto">
               <div className="h-56 rounded-t-xl bg-gray-100 flex justify-center items-center mx-10">
                 <img
                   src={d.image}

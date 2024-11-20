@@ -8,20 +8,35 @@ import "slick-carousel/slick/slick-theme.css";
 const Country2 = () => {
   
     const settings = {
-        dots:true,
+        dots:false,
         infinite: true,
         slidesToShow: 3, 
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive:[
+          {
+            breakpoint:1200,
+            settings:{
+              slidesToShow:2,
+              slidesToScroll:1,
+            },
+          },
+          {
+            breakpoint:768,
+            settings:{
+              slidesToShow:1,
+              slidesToScroll:1,
+            },
+          },]
       };
   return (
     <div className= 'bg-gray-100 w-auto m=auto'>
-        <div className='mt-20'>
-        <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-16">Top Countries to visit in ASIA</h2></div>
+        <div className='mt-20 md:mt-32 md:text-left'>
+        <div className="container px-4">
+        <h2 className="text-3xl font-bold mb-16 ml-5">Top Countries to visit in ASIA</h2></div>
               <Slider {...settings}>
 
             {data.map((d) =>(
