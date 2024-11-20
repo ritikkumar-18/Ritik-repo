@@ -21,7 +21,7 @@ export const Navbar = ( ) => {
 
   
   return (
-    <nav className="w-full flex items-center justify-between p-4 bg-white border-b shadow-sm">
+    <nav className="w-full  flex items-center justify-between p-4 bg-white border-b shadow-sm">
 
     <div className="flex items-center space-x-2 relative xs:left-20  md:left-16">
       <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvd2Vic2l0ZS9sb2dvLW9ubHkuc3ZnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="logo" className="w-12 h-12 xs:w-10 xs:h-10 xs:left-1"/>

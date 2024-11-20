@@ -32,7 +32,7 @@ export const Mood = () => {
          </div>
 
          {/* Road Trip Planner (Bottom-left small image) */}
-         <div className="relative col-span-2 md:col-span-1 h-60 w-80">
+         <div className="relative col-span-2 md:col-span-1 h-60 w-30">
            <img
              src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvcGFnZS8xNjc5MDUwODk1ODQ2MDk3OTQ2MTY2OTkyMTg3NTAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ=="
              alt="Road Trip Planner"

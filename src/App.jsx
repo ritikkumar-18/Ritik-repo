@@ -37,7 +37,7 @@ function App() {
       <Form/>
       {/* <Otp/> */}
       
-      <OtpAuthentication/>
+      {/* <OtpAuthentication/> */}
       
       
     </>

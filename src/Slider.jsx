@@ -291,9 +291,9 @@ const Slide = () => {
 
   return (
     <div className="bg-gray-100 w-auto m-auto">
-      <div className="mt-20 md:mt-32 sm:mt-96 xs:mb-20">
+      <div className="mt-20 md:mt-32 sm:mt-96 xs:mb-20 ">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-16 px-10">Plan as per the best destinations in India</h2>
+          <h2 className="text-4xl font-bold mb-16 px-10 xs:text-xl">Plan as per the best destinations in India</h2>
         </div>
         <Slider {...settings}>
           {data.map((d) => (
