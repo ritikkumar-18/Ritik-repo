@@ -16,7 +16,7 @@ const Country2 = () => {
         speed: 1000,
         autoplaySpeed: 2000,
         cssEase: "linear",
-        arrow:false,
+        arrows:false,
         responsive:[
           {
             breakpoint:1200,
