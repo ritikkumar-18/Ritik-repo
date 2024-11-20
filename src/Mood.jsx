@@ -41,7 +41,7 @@ export const Mood = () => {
            <div className="absolute top-4 left-4 text-white text-xl font-bold">
              Road Trip Planner
            </div>
-           <span className='absolute top-12 left-5 text-white text-xl font-light'>Explore!</span>
+           <span className='absolute top-12 left-5 text-white text-xl font-light xs:mt-2'>Explore!</span>
          </div>
 
          {/* Trips Planned (Center text box) */}

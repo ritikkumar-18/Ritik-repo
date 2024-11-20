@@ -5,7 +5,7 @@ const Europe = () => {
     <div className= 'bg-gray-100 w-auto m=auto'>
         <div className='mt-20'>
         <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-16">Plan your trip anywhere in the world</h2></div>
+        <h2 className="text-4xl font-bold mb-16 xs:text-2xl">Plan your trip anywhere in the world</h2></div>
         </div>
     
     <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 ml-20">
