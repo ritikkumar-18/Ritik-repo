@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import GetTravelForm from './GetTravelForm'
 import OtpAuthentication from './Loginpage'
 
@@ -18,10 +18,32 @@ export const Navbar = ( ) => {
 
   const openOtpAuthentication = () => {
     setShowOtpAuth(true);}
+    const handleSearchClick = () => {
+      navigate('/search');
+    };
+  
+    const toggleMenu = () => {
+      setMenuOpen(!menuOpen);
+    };
+  
+    // Close menu when clicking outside
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+          setMenuOpen(false);
+        }
+      };
+  
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, []);
+  
 
   
   return (
-    <nav className="w-full  flex items-center justify-between p-4 bg-white border-b shadow-sm">
+    <nav className="w-full flex items-center justify-between p-4 bg-white border-b shadow-sm">
 
     <div className="flex items-center space-x-2 relative xs:left-20  md:left-16">
       <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvd2Vic2l0ZS9sb2dvLW9ubHkuc3ZnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="logo" className="w-12 h-12 xs:w-10 xs:h-10 xs:left-1"/>
@@ -55,14 +77,16 @@ export const Navbar = ( ) => {
       
       <GetTravelForm isOpen ={isPopupOpen}
         onClose={closePopup}/>
-        <div className='xs:ml-10'>
-        <button className="md:hidden bg-gray-200 rounded-full p-1">
+        <div className='xs:ml-10 sm:mr-20'>
+        <button onClick={handleSearchClick} className="md:hidden bg-gray-200 rounded-full p-1">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6  text-gray-600 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zm6-6l5 5" />
           </svg>
         </button>
+        </div>
+        <div className=''>
 
-        <button  className="relative md:hidden xs:ml-5 ">
+        <button onClick={toggleMenu} className="relative md:hidden ">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600 xs:text-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>

@@ -70,7 +70,7 @@ export const Head = () => {
       </div>
     </div>
     
-    <div className="absolute bottom-36 mx-5 sm:bottom-52 sm:mx-10 md:bottom-28 xs:mx-auto lg:left-32 left-32 flex space-x-24 text-white text-center">
+    <div className="absolute bottom-36 mx-5 sm:bottom-32 sm:mx-auto md:bottom-28 xs:mx-auto lg:left-32 left-32 flex space-x-24 text-white text-center">
       <div className="flex flex-col items-center">
         <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaWNvbnMvZ2VuZXJhbC90cmF2ZWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="Icon 1" className="h-10 mb-2  xs:h-6 invert" />
         <span className='xs:text-xs '>Free Personalized <br /> Itineraries</span>
