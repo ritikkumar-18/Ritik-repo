@@ -51,7 +51,7 @@ export const Form = () => {
             
 
 
-            <div className='flex gap-10 mt-8 md:mt-0 xs:max-w-screen-sm'>
+            <div className='flex gap-10 mt-8 md:mt-0 xs:max-w-screen-sm '>
               <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Travel Destinations</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
@@ -90,7 +90,7 @@ export const Form = () => {
               </div>
 
 
-              <div className='w-full sm:w-auto'>
+              {/* <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Term & Policies</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Terms of Services</li>
@@ -98,7 +98,7 @@ export const Form = () => {
                   <li>Covid-19 Safety</li>
                   <li>Subscribe</li>
                 </ul>
-              </div> 
+              </div>  */}
 
 
             </div>
