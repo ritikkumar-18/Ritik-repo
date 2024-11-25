@@ -3,7 +3,7 @@ import './Navbar.css'
 import { useState,useEffect } from 'react'
 import GetTravelForm from './GetTravelForm'
 import { useNavigate } from 'react-router-dom'
-import OtpAuthentication from './Loginpage'
+
 
 export const Navbar = ( ) => {
   const navigate2 = useNavigate();
@@ -27,8 +27,8 @@ export const Navbar = ( ) => {
   const openOtp =()=>setIsOpenOtp(true);
   const closeOtp =()=> setIsOpenOtp(false);
 
-  const openOtpAuthentication = () => {
-    setShowOtpAuth(true);}
+ const openOtpAuthentication = () => {
+     setShowOtpAuth(true);}
     const navigate = useNavigate();
     const handleSearchClick = () => {
       navigate('/search');

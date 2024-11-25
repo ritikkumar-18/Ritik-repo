@@ -8,9 +8,11 @@ import "react-phone-input-2/lib/style.css";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
 import { AiOutlineClose } from "react-icons/ai"; // Import the cross icon
+import { useNavigate } from "react-router-dom";
 
 const OtpAuthentication = ( { isOpen, onClose}) => {
   if (!isOpen) return null;
+  const navigate2=useNavigate()
     
   const [otp, setOtp] = useState("");
   const [ph, setPh] = useState("");
@@ -67,7 +69,7 @@ const OtpAuthentication = ( { isOpen, onClose}) => {
       <div className="bg-white w-full max-w-4xl rounded-lg shadow-lg overflow-hidden flex relative">
         {/* Cross Icon */}
         <button
-           onClick={onClose}
+           onClick={() => navigate2(-1)} 
           className="absolute top-3 right-3 bg-gray-200 p-2 rounded-full hover:bg-gray-300 focus:outline-none"
         >
           <AiOutlineClose size={20} className="text-gray-600" />

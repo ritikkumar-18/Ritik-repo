@@ -74,7 +74,7 @@ function Itinerary2() {
       </div>
 
 
-      <div className="w-[70%] h-[100%] ml-3 sm:w-full sm:h-auto xs:w-full md:w-[60%] md:h-[100%] p-6 rounded-3xl  mt-5 shadow-md shadow-purple-600 bg-purple-200">
+      <div className="w-[70%] h-[100%] ml-3 sm:w-full sm:h-auto xs:w-full md:w-full md:h-[100%] p-6 rounded-3xl  mt-5 shadow-md shadow-purple-600 bg-purple-200">
         <h2 className="text-3xl font-bold mb-5">{itinerary[activeDay].year}</h2>
         <h1 className="text-3xl font-bold mb-5">
           {itinerary[activeDay].day} - {itinerary[activeDay].title}
