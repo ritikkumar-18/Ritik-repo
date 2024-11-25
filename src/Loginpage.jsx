@@ -9,7 +9,8 @@ import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
 import { AiOutlineClose } from "react-icons/ai"; // Import the cross icon
 
-const OtpAuthentication = () => {
+const OtpAuthentication = ( { isOpen, onClose}) => {
+  if (!isOpen) return null;
     
   const [otp, setOtp] = useState("");
   const [ph, setPh] = useState("");
@@ -62,11 +63,11 @@ const OtpAuthentication = () => {
   
 
   return (
-    <section className="bg-gray-100 flex items-center justify-center h-screen">
+    <section className="bg-white flex items-center justify-center h-screen transform transition-transform duration-500 ease-in-out translate-X-full animate-slideIn sm:mx-auto sm:ml-0 ">
       <div className="bg-white w-full max-w-4xl rounded-lg shadow-lg overflow-hidden flex relative">
         {/* Cross Icon */}
         <button
-           onClick={handleClose}
+           onClick={onClose}
           className="absolute top-3 right-3 bg-gray-200 p-2 rounded-full hover:bg-gray-300 focus:outline-none"
         >
           <AiOutlineClose size={20} className="text-gray-600" />

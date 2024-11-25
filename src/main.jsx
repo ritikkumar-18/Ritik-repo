@@ -42,6 +42,8 @@ import Pondicherry from './Pondicherry.jsx';
 import Punjab from './Punjab.jsx';
 import Itinerary from './Itinerary.jsx';
 import { Iti } from './Iti.jsx';
+import SearchPage from './Search.jsx';
+import OtpAuthentication from './Loginpage.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -73,6 +75,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/form' element={<GetTravelForm/>}/>
       <Route path='/phalgam' element={<Phalgam/>}/>
       <Route path='itinerary' element={<Iti/>}/>
+      <Route path='/search'element={<SearchPage/>}/>
+      <Route path ='/otpform'element={<OtpAuthentication/>}/>
 
     </Routes>
     </Auth0Provider>

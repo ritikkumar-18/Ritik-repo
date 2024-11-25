@@ -15,7 +15,7 @@ const GetTravelForm = ( { isOpen, onClose}) => {
     /> */}
     {/* <div className='absolute flex items-center justify-center  min-h-screen min-w-screen'> */}
     
-    <div className="  bg-white p-6 rounded-lg shadow-2xl shadow-[#bb60bb] max-w-md w-full h-[88vh] relative  trabsform transition-transform duration-500 ease-in-out translate-y-full animate-slideIn ">
+    <div className="  bg-white p-6 rounded-lg shadow-2xl shadow-[#bb60bb] max-w-md w-full h-[88vh] relative  transform transition-transform duration-500 ease-in-out translate-y-full animate-slideIn ">
     <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
           <FaTimes size={20} />
         </button>
@@ -48,7 +48,7 @@ const GetTravelForm = ( { isOpen, onClose}) => {
 
         <div className="flex items-center text-center mt-5">
           <input type="checkbox" id="unsure" className="mr-2" />
-          <label htmlFor="unsure" className="text-sm font-semibold  text-black  ">Not sure? Let us decide best time for your trip.</label>
+          <label htmlFor="unsure" className="text-sm font-semibold  text-black">Not sure? Let us decide best time for your trip.</label>
         </div>
 
 
