@@ -51,7 +51,7 @@ export const Activities = () => {
         <div key={index} className="mb-10">
           <h1 className="text-black text-3xl font-bold mb-5">{acti.header}</h1>
           <div
-            className="w-[80%] flex flex-col md:flex-row items-start md:items-stretch mb-6 bg-white p-4 rounded-3xl border-2 border-gray-300 hover:shadow-lg hover:shadow-teal-200 cursor-pointer hover:border-teal-300 transition-all duration-300"
+            className="w-[80%] flex flex-col sm:mx-auto sm:w-full xs:w-full sm:h-full md:flex-row items-start md:items-stretch mb-6 bg-white p-4 rounded-3xl border-2 border-gray-300 hover:shadow-lg hover:shadow-teal-200 cursor-pointer hover:border-teal-300 transition-all duration-300"
           >
             
             <div className="w-full md:w-1/4 relative">

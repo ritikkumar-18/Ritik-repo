@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState} from 'react';
+import { useState } from 'react';
 import GetTravelForm from './GetTravelForm';
 
 export const Button = () => {
@@ -7,13 +7,13 @@ export const Button = () => {
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
   return (
-    <section className="py-1 bg-gray-100">
-        <h2 className="text-5xl font-bold mb-6 px-10 mt-16">How it works?</h2>
-    <div className=" bg-gray-100 h-screen flex flex-col items-center justify-center">
-    <div className=" grid grid-cols-4 gap-8  w-3/4 ">
+    <section className="py-1 bg-gray-100 mt-12">
+        <h2 className="text-5xl font-bold mb-6 px-10 sm:text-4xl md:text-5xl lg:text-6xl xs:text-2xl  xs:mb-80">How it works?</h2>
+    <div className=" bg-gray-100 h-screen flex flex-col items-center justify-center  ">
+    <div className=" grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4 gap-8 w-3/4 sm:py-2 sm:px-2 sm:mt-96 sm:w-auto  md:w-3/4 md:mt-48 xs: ">
 
 
-    <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+    <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center ">
         <img src={"https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvd2Vic2l0ZS93aHl1cy0xLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjUwMCwiaGVpZ2h0Ijo1MDAsImZpdCI6ImNvdmVyIn19fQ=="}alt="image 1" className="w-350 h-350 mb-4"/>
         <div className="text-2xl font-bold mb-4">1. Handpick your selection</div>
         <p className="text-grey-700 text-center">From solo travel to worklocation, honeymoon to family travel,tell us about your mood, budget & timeline.</p>
@@ -43,8 +43,8 @@ export const Button = () => {
 
     
     </div>
-    <div className="flex items-center justify-center ">
-        <button onClick={openPopup} className=" hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-14 ">Unlock your Adventure!</button>
+    <div className="flex items-center justify-center md:mt-0 sm:mb-10 xs:mb-80">
+        <button onClick={openPopup} className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-14 ">Unlock your Adventure</button>
         <GetTravelForm isOpen ={isPopupOpen}
         onClose={closePopup}/>
     </div>

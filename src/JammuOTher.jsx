@@ -24,13 +24,32 @@ const Slides = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive:[
+          {
+            breakpoint:1200,
+            settings:{
+              slidesToShow:2,
+              slidesToScroll:1,
+              arrows:false,
+              
+            },
+          },
+          {
+            breakpoint:768,
+            settings:{
+              slidesToShow:1,
+              slidesToScroll:1,
+              arrows:false,
+              dots:false,
+            },
+          },]
       };
   return (
-    <div className=' bg-gray-100 w-auto m=auto'>
+    <div className=' bg-gray-100 w-auto m=auto xs:mt-96'>
         <div className='mt-20'>
         <div className="container ">
-        <h2 className="text-4xl font-bold mb-16 px-10">Other Destinations</h2></div>
+        <h2 className="text-4xl font-bold mb-16 px-10 ">Other Destinations</h2></div>
               <Slider {...settings}>
 
             {data.map((d) =>(

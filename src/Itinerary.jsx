@@ -29,27 +29,25 @@ function Itinerary() {
                     </div>
                 </div>
                 <div className="px-6 py-4 flex items-center justify-between border-t">
-          <div className="flex space-x-24">
+          <div className="flex space-x-24 hidden md:block">
             
             <button className="text-black text-lg font-medium border-b-2   border-transparent hover:border-yellow-400 hover:text-yellow-400 hover:bg-[#262626]  px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Brief
             </button>
-
             <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400  hover:bg-[#262626]  px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Itinerary
             </button>
 
-            <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 hover:bg-[#262626] px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
+             <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 hover:bg-[#262626] px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Stays
             </button>
 
             <button className="text-black text-lg font-medium hover:text-yellow-400 hover:border-b-2 hover:border-yellow-400 hover:bg-[#262626] px-4 py-1 rounded-md transition-all duration-300 ease-in-out">
               Activites
             </button>
-
-          </div>
+           </div> 
           <div>
-            <button className="bg-yellow-400 text-black text-lg font-semibold py-2 px-4 border border-black rounded-lg shadow-md hover:bg-black hover:text-white transition-all">
+            <button className="bg-yellow-400 text-black text-lg font-semibold py-2 px-4 border border-black rounded-lg shadow-md hover:bg-black hover:text-white transition-all sm:text-sm">
               Log in to proceed
             </button>
           </div>

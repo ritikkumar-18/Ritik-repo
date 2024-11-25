@@ -89,13 +89,31 @@ const trips = [
    autoplay: true,
    speed: 2000,
    autoplaySpeed: 1000,
-   cssEase: "linear"
+   cssEase: "linear",
+   responsive:[
+    {
+      breakpoint:1200,
+      settings:{
+        slidesToShow:2,
+        slidesToScroll:1,
+      },
+    },
+    {
+      breakpoint:768,
+      settings:{
+        slidesToShow:1,
+        slidesToScroll:1,
+        arrows:false,
+        dots:false,
+      },
+    },
+  ]
  };
 
    return (
            <div className='p-6 bg-gray-100 mt-14'>
                <h1 className='text-4xl font-bold mb-16'>Trip by our users</h1>
-               <div className='grid md:grid-cols-1 mx-auto gap-4'>
+               <div className='grid md:grid-cols-1 mx-auto gap-4 xs:grid-cols-1'>
                <Slider {...settings}>
                {trips.map((trip,index)=>(
                <div key={index} className='bg-white shadow-md rounded-lg overflow-hidden mx-auto mb-10'>

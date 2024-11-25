@@ -166,10 +166,10 @@
 
    return (
      <>    
-     <h2 className="text-3xl font-bold mb-5 ml-28 mt-10">Why plan with us?</h2>
-     <section className="flex justify-center items-center mx-20 mb-20">
-       <div className="w-[70vw] h-[70vh] p-6">
-         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+     <h2 className="text-3xl font-bold mb-5 ml-28 xs:ml-0 mt-10">Why plan with us?</h2>
+     <section className="flex justify-center items-center mx-20 mb-20 xs:w-full xs:h-full xs:mx-auto">
+       <div className="w-[70vw] h-[70vh] p-6 xs:w-auto xs:h-auto ">
+         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 xs:grid-cols-1 ">
            {features.map((feature, index) => (
              <div
                key={index}
@@ -181,14 +181,14 @@
                  className="w-12 h-12 rounded-lg mr-4"
                />
                <div>
-                 <h3 className="font-bold text-2xl mb-2">{feature.title}</h3>
-                 <p className="text-gray-600">{feature.description}</p>
+                 <h3 className="font-bold text-2xl mb-2 xs:text-lg">{feature.title}</h3>
+                 <p className="text-gray-600 xs:text-lg">{feature.description}</p>
                </div>
              </div>
            ))}
          </div>
        </div>
-       <div className="p-3 max-w-sm   ">
+       <div className="p-3 max-w-sm  hidden md:block ">
            <h2 className="text-3xl font-bold mb-5 ">Get your free travel plan now</h2>
           
            <label className="block mb-2 text-lg font-bold">What do you want to explore?</label>

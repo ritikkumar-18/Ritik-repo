@@ -263,7 +263,7 @@ const Slide = () => {
   
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -271,7 +271,6 @@ const Slide = () => {
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    arrows:false,
     responsive:[
       {
         breakpoint:1200,
@@ -285,6 +284,8 @@ const Slide = () => {
         settings:{
           slidesToShow:1,
           slidesToScroll:1,
+          arrows:false,
+          dots:false,
         },
       },
     ]

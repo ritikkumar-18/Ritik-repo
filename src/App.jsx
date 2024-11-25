@@ -22,9 +22,6 @@ function App() {
 
   return (
     <>
-    
-  
-    
       <Navbar/>
       <Head/>
       <Content/>
@@ -37,7 +34,7 @@ function App() {
       <Form/>
       {/* <Otp/> */}
       
-      {/* <OtpAuthentication/> */}
+       {/* <OtpAuthentication/>  */}
       
       
     </>

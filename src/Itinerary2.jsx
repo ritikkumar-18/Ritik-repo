@@ -55,7 +55,7 @@ function Itinerary2() {
   return (
     <>
     <h1 className="text-3xl font-bold ml-16 mt-10 mb-5">Day By Day Itinerary</h1>
-    <div className="flex flex-col md:flex-row p-6 gap-5 h-[46vh] ">
+    <div className="flex flex-col md:flex-row p-6 gap-5 h-[46vh]  ">
       
       <div className="flex md:flex-col space-x-4 md:space-x-0  md:space-y-4 mb-4 md:mb-0 ml-10">
         {itinerary.map((item, index) => (
@@ -74,7 +74,7 @@ function Itinerary2() {
       </div>
 
 
-      <div className="w-[70%] h-[100%] ml-3  p-6 rounded-3xl  mt-5 shadow-md shadow-purple-600 bg-purple-200">
+      <div className="w-[70%] h-[100%] ml-3 sm:w-full sm:h-auto xs:w-full md:w-[60%] md:h-[100%] p-6 rounded-3xl  mt-5 shadow-md shadow-purple-600 bg-purple-200">
         <h2 className="text-3xl font-bold mb-5">{itinerary[activeDay].year}</h2>
         <h1 className="text-3xl font-bold mb-5">
           {itinerary[activeDay].day} - {itinerary[activeDay].title}
