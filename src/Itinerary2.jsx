@@ -57,12 +57,12 @@ function Itinerary2() {
     <h1 className="text-3xl font-bold ml-16 mt-10 mb-5">Day By Day Itinerary</h1>
     <div className="flex flex-col md:flex-row p-6 gap-5 h-[46vh]  ">
       
-      <div className="flex md:flex-col space-x-4 md:space-x-0  md:space-y-4 mb-4 md:mb-0 ml-10">
+      <div className="flex md:flex-col space-x-4 md:space-x-0  md:space-y-4 mb-4 md:mb-0 ml-10 sm:mx-auto sm:text-xs">
         {itinerary.map((item, index) => (
           <button
             key={index}
             onClick={() => setActiveDay(index)}
-            className={`px-4 py-2 text-left rounded-lg border-2 hover:bg-[#565656] transition-all duration-300 ${
+            className={`px-4 py-2 text-left rounded-lg border-2 hover:bg-[#565656] transition-all duration-300   ${
               activeDay === index
                 ? "bg-black text-white border-black"
                 : "bg-white text-black border-gray-300"
