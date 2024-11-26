@@ -168,7 +168,7 @@ const R2 = () => {
     
     <div className='bg-gray-100 container  px-4 mt-14'>
             <h2 className='text-3xl font-bold text-gray-800 mb-16 sm:text-2xl md:text-4xl'>Top locations across Rajasthan</h2> 
-                <div className='grid grid-cols-1 gap-4 mb-8 ml-48 md:ml-48 sm:ml-auto mx-auto md:w-full md:h-full  '>
+                <div className='grid grid-cols-1 gap-4 mb-8 ml-48 md:ml-48 sm:ml-14 sm:w-full mx-auto md:w-full md:h-full'>
                 <Slider {...settings}>
                 {content.map((contents,index)=>(
                     <div key={index} className='bg-gray-100 rounded-lg overflow-hidden mx-auto '>
