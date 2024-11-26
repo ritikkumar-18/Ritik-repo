@@ -8,7 +8,7 @@ export const Button = () => {
   const closePopup =()=>setIsPopupOpen(false);
   return (
     <section className="py-1 bg-gray-100 mt-12">
-        <h2 className="text-5xl font-bold mb-6 px-10 sm:text-4xl md:text-5xl lg:text-6xl xs:text-2xl  xs:mb-80">How it works?</h2>
+        <h2 className="text-5xl font-bold mb-6 px-10 sm:text-4xl md:text-5xl lg:text-6xl xs:text-2xl  xs:mb-32">How it works?</h2>
     <div className=" bg-gray-100 h-screen flex flex-col items-center justify-center  ">
     <div className=" grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4 gap-8 w-3/4 sm:py-2 sm:px-2 sm:mt-96 sm:w-auto  md:w-3/4 md:mt-48 xs: ">
 
@@ -43,7 +43,7 @@ export const Button = () => {
 
     
     </div>
-    <div className="flex items-center justify-center md:mt-0 sm:mb-10 xs:mb-80">
+    <div className="flex items-center justify-center md:mt-0 sm:mb-10 xs:mb-32">
         <button onClick={openPopup} className="bg-yellow-400 hover:bg-black text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-14 ">Unlock your Adventure</button>
         <GetTravelForm isOpen ={isPopupOpen}
         onClose={closePopup}/>

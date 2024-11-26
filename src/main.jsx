@@ -54,7 +54,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       redirect_uri: window.location.origin
     }}
   >
- 
+
     <Routes>
     
       <Route path="/" element={<App />} />
@@ -77,6 +77,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='itinerary' element={<Iti/>}/>
       <Route path='/search'element={<SearchPage/>}/>
       <Route path ='/otpform'element={<OtpAuthentication/>}/>
+      
 
     </Routes>
     </Auth0Provider>

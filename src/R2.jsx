@@ -143,17 +143,36 @@ const R2 = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive:[
+            {
+              breakpoint:1200,
+              settings:{
+                slidesToShow:2,
+                slidesToScroll:1,
+                arrows:false,
+                
+              },
+            },
+            {
+              breakpoint:768,
+              settings:{
+                slidesToShow:1,
+                slidesToScroll:1,
+                arrows:false,
+                dots:false,
+              },
+            },]
       };
   return (
     
     <div className='bg-gray-100 container  px-4 mt-14'>
-            <h2 className='text-3xl font-bold text-gray-800 mb-16'>Top locations across Rajasthan</h2> 
-                <div className='grid grid-cols-1 gap-4 mb-8 ml-32 '>
+            <h2 className='text-3xl font-bold text-gray-800 mb-16 sm:text-2xl md:text-4xl'>Top locations across Rajasthan</h2> 
+                <div className='grid grid-cols-1 gap-4 mb-8 ml-48 md:ml-48 sm:ml-auto mx-auto md:w-full md:h-full  '>
                 <Slider {...settings}>
                 {content.map((contents,index)=>(
                     <div key={index} className='bg-gray-100 rounded-lg overflow-hidden mx-auto '>
-                        <img src={contents.image}alt={contents.name}className='h-full w-full object-cover rounded-b-lg '/>
+                        <img src={contents.image}alt={contents.name}className='h-full w-full object-cover rounded-b-lg xs:w-full xs:h-full sm:w-full sm:h-full'/>
                         <div className='p-4'>
                             <h3 className='text-xl font-semibold text-gray-800'>{contents.name}</h3>
                             <p className='text-gray-600'>{contents.description}</p>{contents.price&&(

@@ -134,7 +134,7 @@ const Jammucontent = () => {
     
     <div className='bg-gray-100 container  px-4  mt-14'>
             <h2 className='text-4xl font-bold text-gray-800 mb-16 sm:text-2xl md:text-4xl'>Top locations across Jammu & Kashmir</h2> 
-                <div className='grid grid-cols-1 gap-20 mb-8 ml-32'>
+                <div className='grid grid-cols-1 gap-20 mb-8 ml-48 md:ml-48 sm:ml-auto mx-auto md:w-full md:h-full'>
                 <Slider {...settings}>
                 {content.map((contents,index)=>(
                     <div key={index} className='bg-gray-100 rounded-lg overflow-hidden mx-auto relative'>

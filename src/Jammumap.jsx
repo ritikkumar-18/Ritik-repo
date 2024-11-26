@@ -8,7 +8,7 @@ function AboutJK() {
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
   return (
-    <div className='mx-28 text-left '>
+    <div className='mx-28 text-left sm:mx-auto md:mx-28 sm:ml-5 '>
       <h1 className='text-4xl font-bold mb-10 text-center mt-10 xs:text-2xl lg:text-4xl'>A little about Jammu & Kashmir</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 xs:grid-cols-1 justify-between '>
       <p className='text-gray-500 text-md font-medium mb-5 flex-1 mr-5 sm:text-xs md:text-base ' >Nestled in the Himalayas, Kashmir is a glittering jewel among India’s many states. Kashmir is known 
@@ -21,7 +21,7 @@ function AboutJK() {
         destination for adventurers. So if you're looking for a beautiful place to escape and relax, Kashmir is 
         the abode for you!
       </p>
-      <div className="w-100% lg:w-2/5 ml-5 flex-2 mg:mt-0">
+      <div className="w-100% lg:w-2/5 ml-5 flex-2 mg:mt-0 sm:mx-auto sm:ml-3 md:ml-20">
         <iframe
           title="Google Map"
           className="w-full h-80 sm:h-80 sm:w-full xs:w-full md:h-80 lg:h-80 border rounded-md"

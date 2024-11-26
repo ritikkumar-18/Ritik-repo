@@ -49,7 +49,7 @@ const Slides = () => {
     <div className=' bg-gray-100 w-auto m=auto xs:mt-96'>
         <div className='mt-20'>
         <div className="container ">
-        <h2 className="text-4xl font-bold mb-16 px-10 ">Other Destinations</h2></div>
+        <h2 className="text-4xl font-bold mb-16 px-10 sm:text-2xl md:text-4xl ">Other Destinations</h2></div>
               <Slider {...settings}>
 
             {data.map((d) =>(

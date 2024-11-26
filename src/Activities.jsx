@@ -66,7 +66,7 @@ export const Activities = () => {
             </div>
 
           
-            <div className="flex-1 ml-0 md:ml-6 mt-4 md:mt-0 flex flex-col justify-between">
+            <div className="flex-1 ml-0 md:ml-6 mt-4 md:mt-0 flex flex-col justify-between ">
               <div>
                 <h2 className="text-lg font-bold">{acti.name}</h2>
                 <p className="text-gray-500">{acti.location}</p>

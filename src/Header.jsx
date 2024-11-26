@@ -26,8 +26,8 @@ export const Head = () => {
     <div className=" absolute h-5/6 inset-0 "></div>
     <div className="relative flex items-center justify-between px-10  md:px-10 h-full">
       
-      <div className="text-white md:space-y-6  md:top-16  xs:top-28 xs:left-20 sm:left-28 left-32 md:left-24 text-center md:text-left max-w-5xl space-y-6 absolute top-40">
-        <h1 className="text-5xl xs:text-xl mb-5 xs:mb-2 sm:text-2xl md:text-5xl font-extrabold leading-tight">Effortless Travel Planning!<br />Let AI Be Your Expert Guide.</h1>
+      <div className="text-white md:space-y-6  md:top-16  xs:top-20 xs:left-8 sm:left-8 left-32 md:left-24 text-center md:text-left max-w-5xl space-y-6 absolute top-40">
+        <h1 className="text-5xl xs:text-3xl mb-5 xs:mb-2 sm:text-2xl md:text-5xl font-extrabold leading-tight">Effortless Travel Planning!<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl mb-5 xs:mb-2 sm:text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
         <button onClick={openPopup} className="bg-yellow-400 hover:bg-black  text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
           Plan Itinerary For Free!
@@ -70,7 +70,7 @@ export const Head = () => {
       </div>
     </div>
     
-    <div className="absolute bottom-36 mx-5 xs:left-1 xs:bottom-20 sm:bottom-32 sm:mx-auto md:bottom-28 xs:mx-auto sm:mt-20 lg:left-32 left-32 flex space-x-24 text-white text-center">
+    <div className="absolute bottom-36 mx-5 xs:left-1 xs:bottom-20 sm:bottom-72 sm:mx-auto md:bottom-28 xs:mx-auto sm:mt-20 lg:left-32 left-32 flex space-x-24 text-white text-center">
       <div className="flex flex-col items-center">
         <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvaWNvbnMvZ2VuZXJhbC90cmF2ZWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ==" alt="Icon 1" className="h-10 mb-2  xs:h-6 invert" />
         <span className='xs:text-xs '>Free Personalized <br /> Itineraries</span>

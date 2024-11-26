@@ -13,7 +13,7 @@ function Itinerary() {
     <div className='min-h-screen '>
         <div className='container mx-auto p-6'>
             
-                <div className='p-4 border-b'>
+                <div className='p-4 border-b '>
                     <h1 className='text-2xl font-bold text-black'>Winter Wonderland Kashmir</h1>
                     <p className=' text-xl text-gray-400 font-semibold mt-3'>Budget
                     </p>
