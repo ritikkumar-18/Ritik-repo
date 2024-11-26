@@ -45,13 +45,13 @@ const activity=[{
 export const Activities = () => {
   return (
     <> <>
-    <h1 className="text-4xl font-bold ml-16  mt-16 mb-5">Activities</h1>
-    <div className="p-6 ml-16">
+    <h1 className="text-4xl font-bold ml-16  mt-16 mb-5 xs:ml-1">Activities</h1>
+    <div className='p-6 ml-16 sm:ml-2 xs:mx-auto'>
       {activity.map((acti, index) => (
         <div key={index} className="mb-10">
           <h1 className="text-black text-3xl font-bold mb-5">{acti.header}</h1>
           <div
-            className="w-[80%] flex flex-col sm:mx-auto sm:w-full xs:w-full sm:h-full md:flex-row items-start md:items-stretch mb-6 bg-white p-4 rounded-3xl border-2 border-gray-300 hover:shadow-lg hover:shadow-teal-200 cursor-pointer hover:border-teal-300 transition-all duration-300"
+            className="w-[80%] flex flex-col sm:mx-auto sm:w-auto xs:w-full  md:flex-row items-start md:items-stretch mb-6 bg-white p-4 rounded-3xl border-2 border-gray-300 hover:shadow-lg hover:shadow-teal-200 cursor-pointer hover:border-teal-300 transition-all duration-300"
           >
             
             <div className="w-full md:w-1/4 relative">
@@ -77,7 +77,7 @@ export const Activities = () => {
           
 
               
-                <div className="mt-2 flex ">
+                <div className="mt-2 flex">
                   <div className="flex items-center mb-2">
                     <FaCalendarAlt className="text-gray-700 mr-2" />
                     <p className="text-gray-700">
