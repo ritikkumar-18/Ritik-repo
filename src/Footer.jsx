@@ -7,13 +7,13 @@ import React from 'react'
 
 export const Form = () => {
   return (
-    <div className="bg-gray-100 ">
-      <div className="bg-yellow-400 p-8 rounded-lg max-w-4xl mx-auto mt-8 text-center ">
+    <div className="bg-gray-100">
+      <div className="bg-yellow-400 p-8 rounded-lg max-w-4xl mx-auto mt-8 text-center xs:mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-2">Join The Tarzan Way Community</h2>
         <p className="text-gray-700 mb-4">Get Early Bird Deals, Extra Discounts & Priority Customer Support.</p>
         
 
-        <div className="flex justify-center sm:flex-row items-center sm:space-y-0 sm:space-x-4 space-x-4">
+        <div className="flex justify-center sm:flex-row items-center sm:space-y-0 sm:space-x-4 space-x-4 xs:mx-auto">
           <input type="text" placeholder="First name"className="p-3 border border-gray-300 rounded-lg focus:outline-none sm:w-28 md:w-auto"/>
           <input type="email" placeholder="Email address"className="p-3 border border-gray-300 rounded-lg focus:outline-none  sm:w-28 md:w-auto"/>
           <button className="bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold sm:w-auto md:w-auto">Subscribe Now</button>
@@ -23,7 +23,7 @@ export const Form = () => {
       <footer className='bg-black text-white mt-8 py-10 w-full'>
         <div className='container mx-auto px-4'>
           <div className='flex flex-col md:flex-row justify-between'>
-            <div className='mb-6 md:mb-0 flex-1'>
+            <div className='mb-6 md:mb-0 flex-1 '>
               <h3 className='font-bold text-lg'>The Tarzan Way</h3>
               <p className='text-gray-400 mt-2 mx-w-xs'>The Tarzan Way is a travel-based startup<br/> with the vision to simplify travel<br/> and build immerisve travel programs across India.</p>
               <div className='flex gap-5 mt-4 '>
@@ -51,7 +51,7 @@ export const Form = () => {
             
 
 
-            <div className='flex gap-10 mt-8 md:mt-0 xs:max-w-screen-sm '>
+            <div className='flex gap-10 mt-8 md:mt-0 xs:max-w-screen-sm xs:grid xs:grid-cols-2'>
               <div className='w-full sm:w-auto'>
                 <h4 className='font-semibold'>Travel Destinations</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
@@ -78,7 +78,7 @@ export const Form = () => {
               </div>
 
 
-              <div className='w-full sm:w-auto'>
+              <div className='w-full sm:w-auto '>
                 <h4 className='font-semibold'>Company</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Blogs</li>
@@ -90,7 +90,7 @@ export const Form = () => {
               </div>
 
 
-              { <div className='w-full sm:w-auto hidden md:block'>
+              { <div className='w-full sm:w-auto '>
                 <h4 className='font-semibold'>Term & Policies</h4>
                 <ul className='mt-2 text-gray-400 space-y-2'>
                   <li>Terms of Services</li>

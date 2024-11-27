@@ -54,7 +54,7 @@ function Itinerary2() {
 
   return (
     <>
-    <h1 className="text-3xl font-bold ml-16 mt-10 mb-5 sm:ml-1 md:ml-16">Day By Day Itinerary</h1>
+    <h1 className="text-4xl font-bold ml-16 mt-10 mb-5 xs:text-3xl sm:ml-1 md:ml-16">Day By Day Itinerary</h1>
     <div className="flex flex-col md:flex-row p-6 gap-5 h-[46vh] ml-16 xs:ml-1 mx-auto ">
       
       <div className="flex md:flex-col space-x-4 md:space-x-1 md:space-y-4  mb-4 md:mb-0 ml-10 sm:mx-auto sm:text-xs">
