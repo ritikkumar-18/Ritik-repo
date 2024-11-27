@@ -81,7 +81,7 @@ function Itinerary() {
         </div>
         <div ref={briefRef} className=''>
 
-     <div className="grid grid-col grid-cols-2 lg:flex-row gap-6 p-6 md:grid-cols-2 md:w-auto sm:grid-cols-2 sm:text-left  "> 
+     <div className="grid grid-col grid-cols-2 lg:flex-row gap-6 p-6 md:grid-cols-2 md:w-auto sm:grid-cols-2 sm:text-left  sm:ml-1"> 
      
   
       <div className="w-full lg:w-1/3 ">

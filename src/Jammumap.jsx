@@ -9,7 +9,7 @@ function AboutJK() {
   const closePopup =()=>setIsPopupOpen(false);
   return (
     <div className='mx-28 text-left sm:mx-auto md:mx-28 sm:ml-5 '>
-      <h1 className='text-4xl font-bold mb-10 text-center mt-10 xs:text-2xl lg:text-4xl'>A little about Jammu & Kashmir</h1>
+      <h1 className='text-4xl font-bold mb-10 text-center mt-10 xs:text-3xl lg:text-4xl'>A little about Jammu & Kashmir</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 xs:grid-cols-1 justify-between '>
       <p className='text-gray-500 text-md font-medium mb-5 flex-1 mr-5 sm:text-xs md:text-base ' >Nestled in the Himalayas, Kashmir is a glittering jewel among India’s many states. Kashmir is known 
         for its rich culture and picturesque beauty and is home to a number of monuments and historical sites.Traveling to Kashmir is an experience like no other. The valley of Kashmir is dotted with a 

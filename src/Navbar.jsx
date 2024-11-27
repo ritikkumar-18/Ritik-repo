@@ -11,15 +11,12 @@ export const Navbar = ( ) => {
 
   
   
-   const goTo = () => {
-     navigate2('otpform'); }
  
 
 
   const [isPopupOpen, setIsPopupOpen] =useState(false);
   const openPopup =()=> setIsPopupOpen(true);
   const closePopup =()=>setIsPopupOpen(false);
-  const [isNav,setIsNav]=useState(true)
 
 
 
@@ -34,23 +31,6 @@ export const Navbar = ( ) => {
       navigate('/search');
     };
   
-    // const toggleMenu = () => {
-    //   setMenuOpen(!menuOpen);
-    // };
-  
-    // Close menu when clicking outside
-    // useEffect(() => {
-    //   const handleClickOutside = (event) => {
-    //     if (menuRef.current && !menuRef.current.contains(event.target)) {
-    //       setMenuOpen(false);
-    //     }
-    //   };
-  
-    //   document.addEventListener('mousedown', handleClickOutside);
-    //   return () => {
-    //     document.removeEventListener('mousedown', handleClickOutside);
-    //   };
-    // }, []);
   
 
   
@@ -98,7 +78,7 @@ export const Navbar = ( ) => {
         
         </div>
 
-        <button onClick={goTo} className="relative md:hidden ">
+        <button onClick={()=>navigate2('/otpform')} className="relative md:hidden ">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600 xs:text-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
@@ -111,7 +91,7 @@ export const Navbar = ( ) => {
 
       
       <div className="relative">
-        <button onClick={goTo}className="flex items-center text-black hidden md:block">
+        <button onClick={()=>navigate2('/otpform')}className="flex items-center text-black hidden md:block">
           <span  className="sr-only">Account Menu</span>
           <svg   xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24 "onClick={openOtpAuthentication}>
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-4 0-8 1.99-8 4v2h16v-2c0-2.01-4-4-8-4z" />

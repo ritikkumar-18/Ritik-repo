@@ -10,8 +10,8 @@ import { toast, Toaster } from "react-hot-toast";
 import { AiOutlineClose } from "react-icons/ai"; // Import the cross icon
 import { useNavigate } from "react-router-dom";
 
-const OtpAuthentication = ( { isOpen, onClose}) => {
-  if (!isOpen) return null;
+const OtpAuthentication = () => {
+
   const navigate2=useNavigate()
     
   const [otp, setOtp] = useState("");
@@ -78,7 +78,7 @@ const OtpAuthentication = ( { isOpen, onClose}) => {
 
         {/* Left Section */}
         <div
-          className="w-1/2 bg-cover bg-center p-8 text-white flex flex-col justify-center"
+          className="w-1/2 bg-cover bg-center p-8 text-white flex flex-col justify-center hidden md:block"
           style={{
             backgroundImage:
               "url('https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvd2Vic2l0ZS9sb2dpbi1iYWNrZ3JvdW5kLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciJ9fX0=')",
@@ -122,7 +122,7 @@ const OtpAuthentication = ( { isOpen, onClose}) => {
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 p-8 flex flex-col justify-center">
+        <div className="w-1/2 p-8 flex flex-col justify-center ">
           <Toaster toastOptions={{ duration: 4000 }} />
           <div id="recaptcha-container"></div>
           {user ? (
@@ -130,8 +130,8 @@ const OtpAuthentication = ( { isOpen, onClose}) => {
               👍 Login Success
             </h2>
           ) : (
-            <div className="flex flex-col gap-4">
-              <h1 className="text-center leading-normal text-gray-800 font-bold text-2xl mb-4">
+            <div className="flex flex-col gap-4 xs:text-xl xs:mx-auto ">
+              <h1 className="text-center leading-normal text-gray-800 font-bold text-2xl mb-4 ">
                 Login to your account
               </h1>
               {showOTP ? (
@@ -166,12 +166,12 @@ const OtpAuthentication = ( { isOpen, onClose}) => {
                 </>
               ) : (
                 <>
-                  <div className="bg-yellow-400 text-white w-fit mx-auto p-4 rounded-full">
+                  <div className="bg-yellow-400 text-white w-fit mx-auto p-4 rounded-full ">
                     <BsTelephoneFill size={30} />
                   </div>
                   <label
                     htmlFor=""
-                    className="font-medium text-lg text-gray-800 text-center"
+                    className="font-medium text-lg text-gray-800 text-center "
                   >
                     Verify your phone number
                   </label>

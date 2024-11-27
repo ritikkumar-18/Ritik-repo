@@ -66,7 +66,7 @@ const HappyCard=({happy})=>{
 export const Happy = () => {
   return (
     <div className='p-6 bg-gray-100'>
-      <h1 className='text-3xl font-bold mb-12 mt-10'>Happy community of The Tarzan Way</h1>
+      <h1 className='text-4xl font-bold mb-12 mt-10 xs:text-3xl'>Happy community of The Tarzan Way</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>{way.map((happy,index)=>(
         <HappyCard key={index} happy={happy}/>
       ))}</div>

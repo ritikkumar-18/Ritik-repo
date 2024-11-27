@@ -97,7 +97,7 @@
 
     return (
             <div className='p-6 bg-gray-100'>
-                <h1 className='text-4xl font-bold mb-16 sm:text-2xl md:text-4xl'>Trip by our users</h1>
+                <h1 className='text-4xl font-bold mb-16 sm:text-3xl md:text-4xl xs:ml-10'>Trip by our users</h1>
                 <div className='grid md:grid-cols-1 mx-auto gap-4 xs:grid-cols-1'>
                 <Slider {...settings}>
                 {trips.map((trip,index)=>(

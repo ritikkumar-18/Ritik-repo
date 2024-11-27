@@ -3,7 +3,7 @@ import React from 'react'
 const Why=()=>{
   return (
     <div className='bg-gray-100 p-8'>
-        <h2 className='text-3xl font-bold text-gray-800 mb-8'>Why plan with us?</h2>
+        <h2 className='text-4xl font-bold text-gray-800 mb-8'>Why plan with us?</h2>
 
 
 

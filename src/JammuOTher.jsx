@@ -48,13 +48,13 @@ const Slides = () => {
       };
   return (
     <div className=' bg-gray-100 w-auto '>
-        <div className='mt-20'>
+        <div className='mt-20 xs:mt-80'>
         <div className="container ">
-        <h2 className="text-4xl font-bold mb-16 px-10 sm:text-2xl md:text-4xl">Other Destinations</h2></div>
+        <h2 className="text-4xl font-bold mb-16 px-10 sm:text-3xl md:text-4xl">Other Destinations</h2></div>
               <Slider {...settings}>
 
             {data.map((d) =>(
-                <div className='bg-gray-100 h-[450px] text-black rounded-xl xs:mx-auto sm:mx-auto mx-auto'>
+                <div className='bg-gray-100 h-[450px] text-black rounded-xl xs:mx-auto sm:mx-auto mx-auto '>
 
 
                     <div className='h-56 rounded-t-xl bg-gray-100 flex justify-center items-center mx-10 '>

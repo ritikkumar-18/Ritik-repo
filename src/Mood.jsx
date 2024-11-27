@@ -3,7 +3,7 @@ import React from 'react';
 export const Mood = () => {
   return (
       <div>
-       <h1 className='text-4xl font-bold px-10 mb-10 mt-10'>Plan trip as per mood</h1>
+       <h1 className='text-4xl font-bold px-10 mb-10 mt-10 xs:text-3xl'>Plan trip as per mood</h1>
        <div className="grid grid-cols-4 gap-3 p-4 w-[80vw] mx-auto">
          {/* Offbeat Trip Planner (Top-left large image) */}
          <div className="relative col-span-4 md:col-span-2 row-span-1 h-80">
