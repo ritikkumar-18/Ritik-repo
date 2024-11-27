@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import Itinerary2 from './Itinerary2';
 import Stays from './Stays';
 import { Activities } from './Activities';
+import { useNavigate } from 'react-router-dom';
 
 function Itinerary() {
+  const navigate2 = useNavigate();
 
   const briefRef =useRef(null);
   const itineraryRef =useRef(null);
@@ -67,7 +69,7 @@ function Itinerary() {
            
           <div className=' '>
           
-            <button className="bg-yellow-400 text-black text-lg font-semibold py-2 px-4 border border-black rounded-lg shadow-md hover:bg-black hover:text-white transition-all sm:text-sm ">
+            <button onClick={()=>navigate2('/otpform')}className="bg-yellow-400 text-black text-lg font-semibold py-2 px-4 border border-black rounded-lg shadow-md hover:bg-black hover:text-white transition-all sm:text-sm ">
               Log in to proceed
             </button>
           

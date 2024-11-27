@@ -26,7 +26,7 @@ export const Head = () => {
   
     <div className="relative flex items-center justify-between px-10  md:px-10 h-full ">
       
-      <div className="text-white md:space-y-6  md:top-16  xs:top-20 xs:left-4 sm:mt-24 sm:left-8 left-32 md:left-24 text-center md:text-left max-w-5xl space-y-6 absolute top-40">
+      <div className="text-white md:space-y-6  md:top-16  xs:top-20 xs:left-4 sm:mt-24 xs:mt-4 sm:left-8 left-32 md:left-24 text-center md:text-left max-w-5xl space-y-6 absolute top-40">
         <h1 className="text-5xl xs:text-3xl mb-5 xs:mb-2 sm:text-2xl md:text-5xl font-extrabold leading-tight">Effortless Travel Planning!<br />Let AI Be Your Expert Guide.</h1>
         <p className="text-2xl mb-5 xs:mb-2 sm:text-2xl">Bid farewell to generic holiday packages. <br /> Get Your AI-Personalised Itineraries</p>
         <button onClick={openPopup} className="bg-yellow-400 hover:bg-black  text-black hover:text-white transition-all border border-black font-bold py-3 px-6 rounded-md mt-4">
