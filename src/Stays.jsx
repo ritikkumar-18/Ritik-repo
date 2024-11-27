@@ -93,10 +93,10 @@ const Stays = () => {
 
   return (
     <>
-      <h1 className="text-4xl font-bold ml-16  mt-16 md:mt-16 sm:mt-64 mb-5 xs:ml-1 ">Stays</h1>
-      <div className="p-6 ml-16  md:mt-0 sm:ml-2 sm:w-full xs:mx-auto">
+      <h1 className="text-4xl font-bold ml-16  mt-16 sm:mt-64 mb-5 xs:ml-1  ">Stays</h1>
+      <div className="p-6 ml-20  md:mt-0 sm:ml-2 sm:w-full xs:mx-auto mx-auto">
         {staysData.map((stay, index) => (
-          <div key={index} className="mb-14">
+          <div key={index} className="mb-14 ml-16 xs:ml-2">
             <h1 className="text-black text-3xl font-bold mb-5">{stay.header}</h1>
             <div
               className="w-[80%] flex flex-col sm:w-[] xs:w-full md:flex-row items-start md:items-stretch mb-6 bg-white p-4 rounded-3xl border-2 border-gray-300 hover:shadow-lg hover:shadow-teal-200 cursor-pointer hover:border-teal-300 transition-all duration-300"

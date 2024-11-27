@@ -20,9 +20,9 @@ export const Iti = () => {
     <div className='bg-white'>
     <Navbar/>
     <Itinerary/>
-    <Itinerary2/>
-    <Stays/>
-    <Activities/>
+    {/* <Itinerary2/> */}
+    {/* <Stays/>
+    <Activities/> */}
 
     </div>
   )

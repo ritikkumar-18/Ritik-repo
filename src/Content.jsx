@@ -10,7 +10,7 @@ export const Content = () => {
     <section className="py-1 bg-gray-100 mt-12">
         <h2 className="text-5xl font-bold mb-6 px-10 sm:text-4xl md:text-5xl lg:text-6xl xs:text-2xl sm:mb-32 xs:mb-80">How it works?</h2>
     <div className=" bg-gray-100 h-screen flex flex-col items-center justify-center  ">
-    <div className=" grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4 gap-8 w-3/4 sm:py-2 sm:px-2 sm:mt-96 sm:w-auto  md:w-3/4 md:mt-48 xs: ">
+    <div className=" grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4 gap-8 w-3/4 sm:py-2 sm:px-2 sm:mt-30 sm:w-auto  md:w-3/4 md:mt-48 xs:mt-96 ">
 
 
     <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">

@@ -34,7 +34,7 @@ const Country2 = () => {
           },]
       };
   return (
-    <div className= 'bg-gray-100 w-auto m=auto'>
+    <div className= 'bg-gray-100 w-auto mx-auto '>
         <div className='mt-20 md:mt-32 md:text-left'>
         <div className="container px-4">
         <h2 className="text-3xl font-bold mb-16 ml-5 xs:text-xl">Top Countries to visit in ASIA</h2></div>

@@ -166,7 +166,7 @@
 
    return (
      <>    
-     <h2 className="text-3xl font-bold mb-5 ml-28 xs:ml-0 mt-10">Why plan with us?</h2>
+     <h2 className="text-3xl font-bold mb-5 ml-28 xs:ml-0 mt-10 ">Why plan with us?</h2>
      <section className="flex justify-center items-center mx-20 mb-20 xs:w-full xs:h-full xs:mx-auto">
        <div className="w-[70vw] h-[70vh] p-6 xs:w-auto xs:h-auto ">
          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 xs:grid-cols-1 ">

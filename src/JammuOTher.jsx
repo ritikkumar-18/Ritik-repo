@@ -25,6 +25,7 @@ const Slides = () => {
         speed: 2000,
         autoplaySpeed: 2000,
         cssEase: "linear",
+        arrows:false,
         responsive:[
           {
             breakpoint:1200,
@@ -46,17 +47,17 @@ const Slides = () => {
           },]
       };
   return (
-    <div className=' bg-gray-100 w-auto m=auto xs:mt-96'>
+    <div className=' bg-gray-100 w-auto '>
         <div className='mt-20'>
         <div className="container ">
-        <h2 className="text-4xl font-bold mb-16 px-10 sm:text-2xl md:text-4xl ">Other Destinations</h2></div>
+        <h2 className="text-4xl font-bold mb-16 px-10 sm:text-2xl md:text-4xl">Other Destinations</h2></div>
               <Slider {...settings}>
 
             {data.map((d) =>(
-                <div className='bg-gray-100 h-[450px] text-black rounded-xl'>
+                <div className='bg-gray-100 h-[450px] text-black rounded-xl xs:mx-auto sm:mx-auto mx-auto'>
 
 
-                    <div className='h-56 rounded-t-xl bg-gray-100 flex justify-center items-center mx-10'>
+                    <div className='h-56 rounded-t-xl bg-gray-100 flex justify-center items-center mx-10 '>
                       
                         <img src={d.image}  onClick={()=>goTo(d.route)} alt='' className='h-60 w-full object-cover rounded-2xl transform translate duration-300 hover:scale-105 cursor-pointer '/>
                     </div>

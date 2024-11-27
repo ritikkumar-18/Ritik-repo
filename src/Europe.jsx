@@ -2,13 +2,13 @@ import React from 'react';
 
 const Europe = () => {
   return (
-    <div className= 'bg-gray-100 w-auto m=auto'>
+    <div className= 'bg-gray-100 w-auto '>
         <div className='mt-20'>
-        <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-16 xs:text-2xl">Plan your trip anywhere in the world</h2></div>
+        <div className="container px-4">
+        <h2 className="text-4xl font-bold mb-16 xs:text-2xl md:text-4xl ml-5">Plan your trip anywhere in the world</h2></div>
         </div>
     
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 ml-20">
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-6 p-6 ml-20 xs:ml-6">
         
       <div className=" relative flex-shrink-0 w-full md:w-3/5">
         <img src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvcGFnZS8xNjg1MDEwMjAzNjUxNTkzNDQ2NzMxNTY3MzgyODEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjgwMCwiZml0IjoiY292ZXIifX19"alt="Sample"className="rounded-lg shadow-md  object-cover cursor-pointer transform translate duration-300 hover:scale-105"/>

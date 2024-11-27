@@ -16,15 +16,15 @@ export const Head = () => {
   const closePopup =()=>setIsPopupOpen(false);
   
   return (
-    <header className="relative h-screen overflow-hidden">
+    <header className="relative h-screen overflow-hidden mx-auto">
     <img
       src="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvd2Vic2l0ZS9iYW5uZXJzL2hvbWVwYWdlLWhlcm9iYW5uZXItbW9iaWxlLndlYnAiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwNywiaGVpZ2h0Ijo4MTB9fX0="
       alt="Background"
       className="absolute inset-0 w-full h-full object-cover xs:w-full"
     />
     
-    <div className=" absolute h-5/6 inset-0 "></div>
-    <div className="relative flex items-center justify-between px-10  md:px-10 h-full">
+  
+    <div className="relative flex items-center justify-between px-10  md:px-10 h-full ">
       
       <div className="text-white md:space-y-6  md:top-16  xs:top-20 xs:left-8 sm:left-8 left-32 md:left-24 text-center md:text-left max-w-5xl space-y-6 absolute top-40">
         <h1 className="text-5xl xs:text-3xl mb-5 xs:mb-2 sm:text-2xl md:text-5xl font-extrabold leading-tight">Effortless Travel Planning!<br />Let AI Be Your Expert Guide.</h1>

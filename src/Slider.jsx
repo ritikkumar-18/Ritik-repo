@@ -249,8 +249,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {  useNavigate } from 'react-router-dom';
+import { FaChevronLeft,FaChevronRight } from 'react-icons/fa';
+import { useState } from 'react';
+
+const PrevArrow = ({ onClick, hidden }) => (
+  <div
+    className={`absolute bg-[#01202B] p-3 rounded-full left-[-30px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-gray-600 ${hidden ? 'hidden' : ''}`}
+    onClick={onClick}
+  >
+    <FaChevronLeft className='text-white' size={24} />
+  </div>
+);
+
+const NextArrow = ({ onClick, hidden }) => (
+  <div
+    className={`absolute bg-[#01202B] p-3 rounded-full right-[-30px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-gray-600 ${hidden ? 'hidden' : ''}`}
+    onClick={onClick}
+  >
+    <FaChevronRight className='text-white' size={24} />
+  </div>
+);
 
 const Slide = () => {
+  const [hidePrev, setHidePrev] = useState(true);
+  const [hideNext, setHideNext] = useState(false);
   const navigate = useNavigate();
 
   
@@ -259,18 +281,24 @@ const Slide = () => {
     navigate(route); 
   
   };
+  
    
   
 
   const settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
+    speed: 500,
+    arrows:false,
+    beforeChange:(current,next)=>{
+      setHidePrev(next===0);
+      setHideNext(next>=data.length-settings.slidesToShow)
+    },
+    prevArrow:<PrevArrow hidden={hidePrev}/>,
+    nextArrow:<NextArrow hidden ={hideNext}/>,
+    
     responsive:[
       {
         breakpoint:1200,
@@ -292,7 +320,7 @@ const Slide = () => {
   };
 
   return (
-    <div className="bg-gray-100 w-auto m-auto">
+    <div className="bg-gray-100 w-auto mx-auto">
       <div className="mt-20 md:mt-32 sm:mt-96 xs:mb-20 ">
         <div className="container">
           <h2 className="text-4xl font-bold mb-16 px-10 xs:text-xl">Plan as per the best destinations in India</h2>

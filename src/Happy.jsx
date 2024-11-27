@@ -47,7 +47,7 @@ const StarRating=({count})=>{
 
 const HappyCard=({happy})=>{
   return(
-    <div className='bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col md:flex-row gap-4'>
+    <div className='bg-gray-100 p-4 rounded-lg shadow-lg flex flex-col md:flex-row gap-4 mx-auto'>
       <img src={happy.image}alt={happy.name}className='w-full md:w-1/3 h-48 object cover rounded-lg'/>
       <div className='flex flex-col justify-between'>
         <p className='text-gray-700'>{happy.review}</p>

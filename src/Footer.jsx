@@ -7,8 +7,8 @@ import React from 'react'
 
 export const Form = () => {
   return (
-    <div className="bg-gray-100">
-      <div className="bg-yellow-400 p-8 rounded-lg max-w-4xl mx-auto mt-8 text-center">
+    <div className="bg-gray-100 ">
+      <div className="bg-yellow-400 p-8 rounded-lg max-w-4xl mx-auto mt-8 text-center ">
         <h2 className="text-3xl font-bold text-gray-900 mb-2">Join The Tarzan Way Community</h2>
         <p className="text-gray-700 mb-4">Get Early Bird Deals, Extra Discounts & Priority Customer Support.</p>
         

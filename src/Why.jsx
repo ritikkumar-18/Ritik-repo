@@ -7,7 +7,7 @@ const Why=()=>{
 
 
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 '>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mx-auto'>
             <div className='flex items-start space-x-4'>
                 <img src='https://d31aoa0ehgvjdi.cloudfront.net/media/corporates/whychooseus-1.png'alt="icon" className='h-12 w-12'/>
                 <div>
